@@ -22,6 +22,13 @@ int main()
 	fflush(stdin); fflush(stdout);
 	gets(text);
 
+	
+	/*for(int i = strlen(text) - 1; i >= 0; i--)
+	{
+		printf("%c",text[i]);
+	}*/
+	
+	//Anthor solution
 	j = strlen(text) - 1;
 
 	while(text[i] != 0)
@@ -34,7 +41,8 @@ int main()
 
 	printf("\nOriginal text : %s\n",text);
 	printf("Reversed text : %s\n",reverse_text);
-
+	
+	
 	return 0;
 }
 
