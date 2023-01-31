@@ -37,21 +37,19 @@ void get_prime_numbers(int n1, int n2)
 {
 	int counter , i , j;
 
-	/*prime number that is --> number % 1 = 0 && number % itself = 0 only
+	/*prime number that is -->number % itself = 0 only
 	*/
 
 	for(i = n1; i <= n2; i++)
 	{
 		counter = 0;
-		for(j = 1; j <= n2; j++)
+		for(j = 2; j <= n2; j++)
 		{
 			if(i % j == 0)
 				counter++;
 		}
-		if(counter == 2)
+		if(counter == 1)
 			printf("%d ",i);
 	}
 
 }
-
-
