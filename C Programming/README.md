@@ -2,7 +2,7 @@
 # Unit 2
 
 # C Programming 
-## 2) Git ## Done✅✅
-## 3) C Basics 
-## 4) Array & String
-## 5) C Functions 
+## 2) Git ✅✅
+## 3) C Basics ✅✅
+## 4) Array & String ✅✅
+## 5) C Functions ✅✅
