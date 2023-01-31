@@ -2,7 +2,7 @@
 # Unit 2
 
 # C Programming 
-## Lecture 2 ==> Git
-## Lecture 3 ==> C Basics
-## Lecture 4 ==> Array & String
-## Lecture 5 ==> C Functions 
+## 2) Git ## Done✅✅
+## 3) C Basics 
+## 4) Array & String
+## 5) C Functions 
