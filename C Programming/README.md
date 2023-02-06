@@ -6,3 +6,4 @@
 ## 3) C Basics ✅✅
 ## 4) Array & String ✅✅
 ## 5) C Functions ✅✅
+## Mid_term ✅✅
