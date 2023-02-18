@@ -1,0 +1,10 @@
+C:\Users\lenovo\Downloads\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/lenovo/Downloads/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S "D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\C Programming\Pre-Processor Directives\Program without main Function" -B "D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\C Programming\Pre-Processor Directives\Program without main Function\cmake-build-debug"
+-- The C compiler identification is GNU 6.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Mastering Embedded System/GitHub_Repo/Mastering_Embedded_System_Online_Diploma/C Programming/Pre-Processor Directives/Program without main Function/cmake-build-debug
