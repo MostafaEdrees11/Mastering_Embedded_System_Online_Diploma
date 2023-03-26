@@ -7,3 +7,6 @@
 ## 4) Array & String ✅✅
 ## 5) C Functions ✅✅
 ## Mid_term ✅✅
+## 6) Structure & Union & Enumeration ✅✅
+## 7) Pre-Processor Directives ✅✅
+## 8) Pointers ✅✅
