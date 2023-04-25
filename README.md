@@ -19,7 +19,7 @@
 - [Unit 8: MCU Interfacing](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/0/)
 - [Unit 9: MCU Timers/ADC](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/0/)
 - [Unit 10: SW Testing/Validation](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/0/)
-- [Unit 11: Apply on Embedded Systems Jobs](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/100/?title=Exams&color=bababa)
+- [Unit 11: Apply on Embedded Systems Jobs](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/0/?title=Exams&color=bababa)
 
 ---
 
