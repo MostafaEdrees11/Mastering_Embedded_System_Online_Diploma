@@ -1,0 +1,49 @@
+===============================================================
+		   app.o
+===============================================================
+00000000 R Constant_Global_Variable
+00000000 D Initalized_Global_Variable
+00000000 T main
+00000000 B Uninitalized_Global_Variable
+===============================================================
+		   startup.o
+===============================================================
+         U _E_bss
+         U _E_data
+         U _E_text
+         U _S_bss
+         U _S_data
+000000b0 W Bus_Fault_Handler
+000000b0 T Default_Handler
+00000000 R g_p_fn_vectors
+000000b0 W Hard_Fault_Handler
+         U main
+000000b0 W MM_Fault_Handler
+000000b0 W NMI_Handler
+00000000 T Reset_Handler
+00000000 b Stack_top
+000000b0 W Usage_Fault_Handler
+===============================================================
+		Unit3_Lesson4_Lab3_Cortex_M4.elf
+===============================================================
+2000040c B _E_bss
+20000008 D _E_data
+000001a8 R _E_rodata
+00000198 T _E_text
+20000008 B _S_bss
+20000000 D _S_data
+000001a0 R _S_rodata
+000000cc W Bus_Fault_Handler
+000001a0 R Constant_Global_Variable
+000000cc T Default_Handler
+00000000 T g_p_fn_vectors
+000000cc W Hard_Fault_Handler
+20000000 D Initalized_Global_Variable
+000000d8 T main
+000000cc W MM_Fault_Handler
+000000cc W NMI_Handler
+0000001c T Reset_Handler
+20000008 b Stack_top
+20000408 B Uninitalized_Global_Variable
+000000cc W Usage_Fault_Handler
+===============================================================
