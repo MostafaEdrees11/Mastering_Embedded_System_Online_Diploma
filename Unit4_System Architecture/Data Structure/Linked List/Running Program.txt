@@ -1,0 +1,432 @@
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 5
+
+*******List is Empty.*******
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 1
+
+Enter Student ID: 1
+Enter Student Full Name: Mostafa
+Enter Student Height: 165
+
+*******Student added successfully.*******
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 1
+
+Enter Student ID: 2
+Enter Student Full Name: Amir
+Enter Student Height: 170
+
+*******Student added successfully.*******
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 1
+
+Enter Student ID: 3
+Enter Student Full Name: Omar
+Enter Student Height: 170
+
+*******Student added successfully.*******
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 5
+
+-------------------------------------------
+Student 1: 
+-------------------------------------------
+	ID: 1
+	Name: Mostafa
+	Height: 165.000
+-------------------------------------------
+
+-------------------------------------------
+Student 2: 
+-------------------------------------------
+	ID: 2
+	Name: Amir
+	Height: 170.000
+-------------------------------------------
+
+-------------------------------------------
+Student 3: 
+-------------------------------------------
+	ID: 3
+	Name: Omar
+	Height: 170.000
+-------------------------------------------
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 6
+
+Number of Students: 3
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 4
+
+Enter Student ID: 2
+-------------------------------------------
+	ID: 2
+	Name: Amir
+	Height: 170.000
+-------------------------------------------
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 7
+
+Enter Index of Node: 0
+-------------------------------------------
+	ID: 1
+	Name: Mostafa
+	Height: 165.000
+-------------------------------------------
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 8
+
+Enter Index of Node: 1
+-------------------------------------------
+	ID: 3
+	Name: Omar
+	Height: 170.000
+-------------------------------------------
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 10
+
+*******Reverse Linked List successfully.*******
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 5
+
+-------------------------------------------
+Student 1: 
+-------------------------------------------
+	ID: 3
+	Name: Omar
+	Height: 170.000
+-------------------------------------------
+
+-------------------------------------------
+Student 2: 
+-------------------------------------------
+	ID: 2
+	Name: Amir
+	Height: 170.000
+-------------------------------------------
+
+-------------------------------------------
+Student 3: 
+-------------------------------------------
+	ID: 1
+	Name: Mostafa
+	Height: 165.000
+-------------------------------------------
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 9
+
+-------------------------------------------
+The Middle Student is: 
+-------------------------------------------
+	ID: 2
+	Name: Amir
+	Height: 170.000
+-------------------------------------------
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 2
+
+Enter Student ID: 2
+
+*******Student removed successfully.*******
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 5
+
+-------------------------------------------
+Student 1: 
+-------------------------------------------
+	ID: 3
+	Name: Omar
+	Height: 170.000
+-------------------------------------------
+
+-------------------------------------------
+Student 2: 
+-------------------------------------------
+	ID: 1
+	Name: Mostafa
+	Height: 165.000
+-------------------------------------------
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 3
+
+*******All Students removed successfully.*******
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 5
+
+*******List is Empty.*******
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 6
+
+Number of Students: 0
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 9
+
+*******List is Empty.*******
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 20
+Wrong Choose !!!.
+
+==================================================
+1.  Add a New Student.
+2.  Remove a Student.
+3.  Delete All Students.
+4.  View Data of a Student.
+5.  View All Students Data.
+6.  Calculate Number Of the Students.
+7.  Get Nth Node From Start.
+8.  Get Nth Node From End.
+9.  Find The Middle Student.
+10. Reverse The Linked List.
+11. Exit.
+================================================
+Enter your choose: 11
+
+The Program is End.
