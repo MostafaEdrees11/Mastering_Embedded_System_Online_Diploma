@@ -1,0 +1,603 @@
+US Sensor init.
+DC Motor init.
+
+US Sensor Busy State: distance = 53
+US Sensor ---------------- distance = 53 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 53	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 0 ***************************
+US Sensor Busy State: distance = 54
+US Sensor ---------------- distance = 54 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 54	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 1 ***************************
+US Sensor Busy State: distance = 54
+US Sensor ---------------- distance = 54 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 54	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 2 ***************************
+US Sensor Busy State: distance = 46
+US Sensor ---------------- distance = 46 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 46	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 3 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 4 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 5 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 6 ***************************
+US Sensor Busy State: distance = 55
+US Sensor ---------------- distance = 55 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 55	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 7 ***************************
+US Sensor Busy State: distance = 46
+US Sensor ---------------- distance = 46 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 46	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 8 ***************************
+US Sensor Busy State: distance = 45
+US Sensor ---------------- distance = 45 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 45	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 9 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 10 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 11 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 12 ***************************
+US Sensor Busy State: distance = 53
+US Sensor ---------------- distance = 53 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 53	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 13 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 14 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 15 ***************************
+US Sensor Busy State: distance = 48
+US Sensor ---------------- distance = 48 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 48	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 16 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 17 ***************************
+US Sensor Busy State: distance = 54
+US Sensor ---------------- distance = 54 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 54	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 18 ***************************
+US Sensor Busy State: distance = 47
+US Sensor ---------------- distance = 47 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 47	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 19 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 20 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 21 ***************************
+US Sensor Busy State: distance = 53
+US Sensor ---------------- distance = 53 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 53	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 22 ***************************
+US Sensor Busy State: distance = 55
+US Sensor ---------------- distance = 55 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 55	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 23 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 24 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 25 ***************************
+US Sensor Busy State: distance = 53
+US Sensor ---------------- distance = 53 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 53	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 26 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 27 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 28 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 29 ***************************
+US Sensor Busy State: distance = 47
+US Sensor ---------------- distance = 47 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 47	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 30 ***************************
+US Sensor Busy State: distance = 46
+US Sensor ---------------- distance = 46 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 46	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 31 ***************************
+US Sensor Busy State: distance = 54
+US Sensor ---------------- distance = 54 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 54	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 32 ***************************
+US Sensor Busy State: distance = 55
+US Sensor ---------------- distance = 55 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 55	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 33 ***************************
+US Sensor Busy State: distance = 55
+US Sensor ---------------- distance = 55 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 55	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 34 ***************************
+US Sensor Busy State: distance = 47
+US Sensor ---------------- distance = 47 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 47	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 35 ***************************
+US Sensor Busy State: distance = 49
+US Sensor ---------------- distance = 49 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 49	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 36 ***************************
+US Sensor Busy State: distance = 54
+US Sensor ---------------- distance = 54 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 54	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 37 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 38 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 39 ***************************
+US Sensor Busy State: distance = 49
+US Sensor ---------------- distance = 49 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 49	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 40 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 41 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 42 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 43 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 44 ***************************
+US Sensor Busy State: distance = 45
+US Sensor ---------------- distance = 45 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 45	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 45 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 46 ***************************
+US Sensor Busy State: distance = 45
+US Sensor ---------------- distance = 45 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 45	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 47 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 48 ***************************
+US Sensor Busy State: distance = 49
+US Sensor ---------------- distance = 49 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 49	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 49 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 50 ***************************
+US Sensor Busy State: distance = 46
+US Sensor ---------------- distance = 46 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 46	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 51 ***************************
+US Sensor Busy State: distance = 48
+US Sensor ---------------- distance = 48 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 48	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 52 ***************************
+US Sensor Busy State: distance = 55
+US Sensor ---------------- distance = 55 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 55	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 53 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 54 ***************************
+US Sensor Busy State: distance = 45
+US Sensor ---------------- distance = 45 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 45	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 55 ***************************
+US Sensor Busy State: distance = 45
+US Sensor ---------------- distance = 45 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 45	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 56 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 57 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 58 ***************************
+US Sensor Busy State: distance = 53
+US Sensor ---------------- distance = 53 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 53	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 59 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 60 ***************************
+US Sensor Busy State: distance = 55
+US Sensor ---------------- distance = 55 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 55	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 61 ***************************
+US Sensor Busy State: distance = 48
+US Sensor ---------------- distance = 48 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 48	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 62 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 63 ***************************
+US Sensor Busy State: distance = 47
+US Sensor ---------------- distance = 47 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 47	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 64 ***************************
+US Sensor Busy State: distance = 55
+US Sensor ---------------- distance = 55 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 55	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 65 ***************************
+US Sensor Busy State: distance = 54
+US Sensor ---------------- distance = 54 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 54	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 66 ***************************
+US Sensor Busy State: distance = 55
+US Sensor ---------------- distance = 55 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 55	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 67 ***************************
+US Sensor Busy State: distance = 48
+US Sensor ---------------- distance = 48 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 48	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 68 ***************************
+US Sensor Busy State: distance = 55
+US Sensor ---------------- distance = 55 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 55	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 69 ***************************
+US Sensor Busy State: distance = 46
+US Sensor ---------------- distance = 46 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 46	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 70 ***************************
+US Sensor Busy State: distance = 46
+US Sensor ---------------- distance = 46 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 46	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 71 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 72 ***************************
+US Sensor Busy State: distance = 53
+US Sensor ---------------- distance = 53 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 53	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 73 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 74 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 75 ***************************
+US Sensor Busy State: distance = 47
+US Sensor ---------------- distance = 47 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 47	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 76 ***************************
+US Sensor Busy State: distance = 49
+US Sensor ---------------- distance = 49 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 49	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 77 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 78 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 79 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 80 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 81 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 82 ***************************
+US Sensor Busy State: distance = 45
+US Sensor ---------------- distance = 45 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 45	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 83 ***************************
+US Sensor Busy State: distance = 46
+US Sensor ---------------- distance = 46 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 46	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 84 ***************************
+US Sensor Busy State: distance = 49
+US Sensor ---------------- distance = 49 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 49	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 85 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 86 ***************************
+US Sensor Busy State: distance = 51
+US Sensor ---------------- distance = 51 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 51	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 87 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 88 ***************************
+US Sensor Busy State: distance = 52
+US Sensor ---------------- distance = 52 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 52	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 89 ***************************
+US Sensor Busy State: distance = 49
+US Sensor ---------------- distance = 49 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 49	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 90 ***************************
+US Sensor Busy State: distance = 45
+US Sensor ---------------- distance = 45 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 45	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 91 ***************************
+US Sensor Busy State: distance = 53
+US Sensor ---------------- distance = 53 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 53	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 92 ***************************
+US Sensor Busy State: distance = 49
+US Sensor ---------------- distance = 49 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 49	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 93 ***************************
+US Sensor Busy State: distance = 49
+US Sensor ---------------- distance = 49 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 49	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 94 ***************************
+US Sensor Busy State: distance = 45
+US Sensor ---------------- distance = 45 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 45	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 95 ***************************
+US Sensor Busy State: distance = 48
+US Sensor ---------------- distance = 48 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 48	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 96 ***************************
+US Sensor Busy State: distance = 48
+US Sensor ---------------- distance = 48 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 48	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 97 ***************************
+US Sensor Busy State: distance = 50
+US Sensor ---------------- distance = 50 ---------------> CA
+CA ---------------- speed = 0 ---------------> DC Motor
+CA Waiting State: distance = 50	 speed = 0
+DC Motor Busy State: speed = 0
+************************** 98 ***************************
+US Sensor Busy State: distance = 53
+US Sensor ---------------- distance = 53 ---------------> CA
+CA ---------------- speed = 30 ---------------> DC Motor
+CA Driving State: distance = 53	 speed = 30
+DC Motor Busy State: speed = 30
+************************** 99 ***************************
