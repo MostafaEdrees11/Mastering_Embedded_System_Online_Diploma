@@ -1,0 +1,1 @@
+# C Program to Make a simple Calculator to add,subtract,Multiply and Divide using switch case

@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Program_without_main_Function",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Program_without_main_Function::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Program_without_main_Function-Debug-626f6857f85ccbea156b.json",
+					"name" : "Program_without_main_Function",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Mastering Embedded System/GitHub_Repo/Mastering_Embedded_System_Online_Diploma/C Programming/Pre-Processor Directives/Program without main Function/cmake-build-debug",
+		"source" : "D:/Mastering Embedded System/GitHub_Repo/Mastering_Embedded_System_Online_Diploma/C Programming/Pre-Processor Directives/Program without main Function"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
