@@ -1,1 +1,0 @@
-# C Program to check Vowel or Consonant

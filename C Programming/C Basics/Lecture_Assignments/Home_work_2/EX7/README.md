@@ -1,1 +1,0 @@
-# C program to find the Factorial of a number

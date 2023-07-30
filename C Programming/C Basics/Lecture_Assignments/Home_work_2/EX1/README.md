@@ -1,1 +1,0 @@
-# Write C Program to Check whether a Number is Even or Odd

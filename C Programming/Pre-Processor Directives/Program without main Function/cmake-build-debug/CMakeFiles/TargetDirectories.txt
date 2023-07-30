@@ -1,3 +1,0 @@
-D:/Mastering Embedded System/GitHub_Repo/Mastering_Embedded_System_Online_Diploma/C Programming/Pre-Processor Directives/Program without main Function/cmake-build-debug/CMakeFiles/Program_without_main_Function.dir
-D:/Mastering Embedded System/GitHub_Repo/Mastering_Embedded_System_Online_Diploma/C Programming/Pre-Processor Directives/Program without main Function/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Mastering Embedded System/GitHub_Repo/Mastering_Embedded_System_Online_Diploma/C Programming/Pre-Processor Directives/Program without main Function/cmake-build-debug/CMakeFiles/rebuild_cache.dir

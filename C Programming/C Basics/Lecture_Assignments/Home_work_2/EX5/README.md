@@ -1,1 +1,0 @@
-# C Program to Check whether a character is an alphabet or not
