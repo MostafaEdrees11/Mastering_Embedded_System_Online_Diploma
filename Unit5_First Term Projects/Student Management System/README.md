@@ -1,20 +1,27 @@
 # Student Management System 👨‍🎓👨‍🎓
 
+![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit5_First%20Term%20Projects/Student%20Management%20System/Running%20Screenshots/Cover%20Page.PNG)
+
 ## Description
 It is a simple software for Student Information Management System which can perform the following operations:
-	- Store first name of the student.
-	- Store last name of the student.
-	- Store unique id number for each student.
-	- Store GPA for each student.
-	- Store courses registered by the student.
+
+	* Store first name of the student.
+	
+	* Store last name of the student.
+	
+	* Store unique id number for each student.
+	
+	* Store GPA for each student.
+	
+	* Store courses registered by the student.
 
 To now alot of information about the project you can see this report:
 
-[Student Management System Report](https://drive.google.com/drive/u/2/folders/1I1zyHvDcfz-UVL0cdYhDMCdA5xccpjtz)
+[Student Management System Report](https://drive.google.com/drive/u/2/folders/153toCyt1ZKxfchkII60QuQgB3QzpPfvJ)
 
 To see the video of running the project:
 
-[Student Management System Video](https://drive.google.com/drive/u/2/folders/1-ubtekjkARF5dU45Q_bx7X0dgZyz0bcY)
+[Student Management System Video](https://drive.google.com/drive/u/2/folders/1hHsypsyJtuWUf-triOwyjbxVlyAYwEWv)
 ___
 To Build & Run the project there is two methods:
 * 📍 Using IDE
