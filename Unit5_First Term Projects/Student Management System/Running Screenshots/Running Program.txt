@@ -1,0 +1,818 @@
+
+********************************************************
+Welcome to the Student Management System
+********************************************************
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 2
+---------------------------------------------------
+[INFO] ID Number 1 is added successfully.
+---------------------------------------------------
+---------------------------------------------------
+[ERROR] ID Number 1 is already taken.
+---------------------------------------------------
+---------------------------------------------------
+[INFO] ID Number 2 is added successfully.
+---------------------------------------------------
+---------------------------------------------------
+[INFO] ID Number 3 is added successfully.
+---------------------------------------------------
+---------------------------------------------------
+[INFO] ID Number 4 is added successfully.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 1
+---------------------------------------------------
+Add the Student Details
+---------------------------------------------------
+Enter Your ID: 5
+Enter Your First Name: Mostafa
+Enter Your Last Name: Mohamed
+Enter Your GPA: 3.7
+Enter the course id of each course
+Course 1 id: 2
+Course 2 id: 3
+Course 3 id: 4
+Course 4 id: 5
+Course 5 id: 6
+---------------------------------------------------
+[INFO] Student Details is added successfully.
+---------------------------------------------------
+[INFO] The total number of students is 5
+[INFO] You can add up to 50 Students
+[INFO] You can add 45 more students
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 6
+
+---------------------------------------------------
+[INFO] The total number of students is 5
+[INFO] You can add up to 50 Students
+[INFO] You can add 45 more students
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 3
+Enter your ID: 5
+
+---------------------------------------------------
+The Student Details are: 
+---------------------------------------------------
+The First Name is Mostafa
+The Last Name is Mohamed
+ID Number is 5
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 4
+Enter the First Name: Mostafa
+
+---------------------------------------------------
+The Student Details are: 
+---------------------------------------------------
+The First Name is Mostafa
+The Last Name is Edrees
+ID Number is 1
+The GPA is 3.50
+The Courses you enrolled in: 
+    The Course ID is 1
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+---------------------------------------------------
+
+---------------------------------------------------
+The Student Details are: 
+---------------------------------------------------
+The First Name is Mostafa
+The Last Name is Mohamed
+ID Number is 5
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 5
+
+Enter the Course ID: 6
+
+---------------------------------------------------
+The Student Details are: 
+---------------------------------------------------
+The First Name is Anas
+The Last Name is Mostafa
+ID Number is 2
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+
+---------------------------------------------------
+The Student Details are: 
+---------------------------------------------------
+The First Name is Abdo
+The Last Name is Mahmoud
+ID Number is 4
+The GPA is 2.50
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+
+---------------------------------------------------
+The Student Details are: 
+---------------------------------------------------
+The First Name is Mostafa
+The Last Name is Mohamed
+ID Number is 5
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 10
+
+---------------------------------------------------
+The Students Details are: 
+Student 1: 
+---------------------------------------------------
+The First Name is Mostafa
+The Last Name is Edrees
+ID Number is 1
+The GPA is 3.50
+The Courses you enrolled in: 
+    The Course ID is 1
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+---------------------------------------------------
+Student 2: 
+---------------------------------------------------
+The First Name is Anas
+The Last Name is Mostafa
+ID Number is 2
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+Student 3: 
+---------------------------------------------------
+The First Name is Amir
+The Last Name is Mohamed
+ID Number is 3
+The GPA is 3.30
+The Courses you enrolled in: 
+    The Course ID is 1
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+---------------------------------------------------
+Student 4: 
+---------------------------------------------------
+The First Name is Abdo
+The Last Name is Mahmoud
+ID Number is 4
+The GPA is 2.50
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+Student 5: 
+---------------------------------------------------
+The First Name is Mostafa
+The Last Name is Mohamed
+ID Number is 5
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 7
+
+Enter the ID that you want to delete it: 4
+
+---------------------------------------------------
+[INFO] The ID Number 4 is removed successfully.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 10
+
+---------------------------------------------------
+The Students Details are: 
+Student 1: 
+---------------------------------------------------
+The First Name is Mostafa
+The Last Name is Edrees
+ID Number is 1
+The GPA is 3.50
+The Courses you enrolled in: 
+    The Course ID is 1
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+---------------------------------------------------
+Student 2: 
+---------------------------------------------------
+The First Name is Anas
+The Last Name is Mostafa
+ID Number is 2
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+Student 3: 
+---------------------------------------------------
+The First Name is Amir
+The Last Name is Mohamed
+ID Number is 3
+The GPA is 3.30
+The Courses you enrolled in: 
+    The Course ID is 1
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+---------------------------------------------------
+Student 4: 
+---------------------------------------------------
+The First Name is Mostafa
+The Last Name is Mohamed
+ID Number is 5
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 1
+---------------------------------------------------
+Add the Student Details
+---------------------------------------------------
+Enter Your ID: 1
+
+---------------------------------------------------
+[ERROR] ID Number 1 is already taken.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 3
+Enter your ID: 20
+
+---------------------------------------------------
+[ERROR] ID Number 20 not found.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 4
+Enter the First Name: MMMMM
+
+---------------------------------------------------
+[ERROR] MMMMM is not found.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 5
+
+Enter the Course ID: 30
+
+---------------------------------------------------
+[ERROR] Course ID 30 is not found.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 9
+
+Enter the Student ID number to update its Details: 1
+
+----------------------
+1. First Name.
+2. Last Name.
+3. ID Number.
+4. GPA.
+5. Courses ID.
+----------------------
+What do you want to edit: 1
+Enter the New First Name: Sasa
+
+---------------------------------------------------
+[INFO] UPDATED SUCCESSFULLY.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 9
+
+Enter the Student ID number to update its Details: 1
+
+----------------------
+1. First Name.
+2. Last Name.
+3. ID Number.
+4. GPA.
+5. Courses ID.
+----------------------
+What do you want to edit: 2
+Enter the New Last Name: Edreeees
+
+---------------------------------------------------
+[INFO] UPDATED SUCCESSFULLY.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 9
+
+Enter the Student ID number to update its Details: 1
+
+----------------------
+1. First Name.
+2. Last Name.
+3. ID Number.
+4. GPA.
+5. Courses ID.
+----------------------
+What do you want to edit: 4
+Enter the New GPA: 2.5
+
+---------------------------------------------------
+[INFO] UPDATED SUCCESSFULLY.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 9
+
+Enter the Student ID number to update its Details: 1
+
+----------------------
+1. First Name.
+2. Last Name.
+3. ID Number.
+4. GPA.
+5. Courses ID.
+----------------------
+What do you want to edit: 5
+Enter the New Courses ID: 
+Course 1 id: 2
+Course 2 id: 3
+Course 3 id: 4
+Course 4 id: 5
+Course 5 id: 6
+
+---------------------------------------------------
+[INFO] UPDATED SUCCESSFULLY.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 3
+Enter your ID: 1
+
+---------------------------------------------------
+The Student Details are: 
+---------------------------------------------------
+The First Name is Sasa
+The Last Name is Edreeees
+ID Number is 1
+The GPA is 2.50
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 10
+
+---------------------------------------------------
+The Students Details are: 
+Student 1: 
+---------------------------------------------------
+The First Name is Sasa
+The Last Name is Edreeees
+ID Number is 1
+The GPA is 2.50
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+Student 2: 
+---------------------------------------------------
+The First Name is Anas
+The Last Name is Mostafa
+ID Number is 2
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+Student 3: 
+---------------------------------------------------
+The First Name is Amir
+The Last Name is Mohamed
+ID Number is 3
+The GPA is 3.30
+The Courses you enrolled in: 
+    The Course ID is 1
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+---------------------------------------------------
+Student 4: 
+---------------------------------------------------
+The First Name is Mostafa
+The Last Name is Mohamed
+ID Number is 5
+The GPA is 3.70
+The Courses you enrolled in: 
+    The Course ID is 2
+    The Course ID is 3
+    The Course ID is 4
+    The Course ID is 5
+    The Course ID is 6
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 25
+
+---------------------------------------------------
+[ERROR] You Enter a Wrong Choice.
+---------------------------------------------------
+
+==================================================
+Choose The Task that you want to perform
+==================================================
+1.  Add The Student Details Manually.
+2.  Add The Student Details From Text File.
+3.  Find Student Details by ID Number.
+4.  Find Student Details by First Name.
+5.  Find Student Details by Course ID.
+6.  Find the Total Number of Students.
+7.  Delete Student Details by ID Number.
+8.  Delete All Students.
+9.  Update Student Details by ID Number.
+10.  Show All Information.
+11. Exit.
+================================================
+
+Enter your choose to perform the task: 11
+
+---------------------------------------------------
+[INFO] End of the program.
+---------------------------------------------------
