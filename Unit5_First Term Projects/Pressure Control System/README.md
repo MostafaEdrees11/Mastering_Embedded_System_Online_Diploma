@@ -9,7 +9,7 @@ In this project, A client expects you to deliver the software of the following s
 
 To now alot of information about the project you can see this report:
 
-[Pressure Control System Report](https://drive.google.com/drive/u/2/folders/1I1zyHvDcfz-UVL0cdYhDMCdA5xccpjtz)
+[Pressure Control System Report](https://drive.google.com/file/d/1yUQSch0_M2eVL6hSwuNjlYqlxFy8_veA/view?usp=drive_link)
 
 To see the video of running the project:
 

@@ -17,7 +17,7 @@ It is a simple software for Student Information Management System which can perf
 
 To now alot of information about the project you can see this report:
 
-[Student Management System Report](https://drive.google.com/drive/u/2/folders/153toCyt1ZKxfchkII60QuQgB3QzpPfvJ)
+[Student Management System Report](https://drive.google.com/file/d/1eXvrwGjXZq1R6-XU_gG6JvBuZkFGbi19/view?usp=drive_link)
 
 To see the video of running the project:
 
