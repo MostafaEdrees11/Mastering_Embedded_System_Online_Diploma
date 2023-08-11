@@ -2,17 +2,17 @@
 
 ## Contents
 
-### First Term ![image](https://progress-bar.dev/80/?title=IN_PROGRESS)
+### First Term ![image](https://progress-bar.dev/100/?title=DONE)
 
 - [Unit 1: Diploma Prerequisites](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/100/?title=No_Assignments&color=bababa)
 - [Unit 2: C Programming](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/tree/master/C%20Programming) ![image](https://progress-bar.dev/100/)
 - [Unit 3: Embedded C](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/tree/master/Embedded%20C) ![image](https://progress-bar.dev/100/)
 - [Unit 4: System Architect](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/tree/master/Unit4_System%20Architecture)![image](https://progress-bar.dev/100/)
-- [Unit 5: First Term Projects](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma)![image](https://progress-bar.dev/0/)
+- [Unit 5: First Term Projects](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/tree/master/Unit5_First%20Term%20Projects)![image](https://progress-bar.dev/100/)
 
 ---
 
-### Second Term ![image](https://progress-bar.dev/0/?title=Start_Soon&color=ff00ff)
+### Second Term ![image](https://progress-bar.dev/0/?title=IN_PROGRESS&color=ff00ff)
 
 - [Unit 6: MCU Fundamentals](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/0/)
 - [Unit 7: MCU Essential Peripherals](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/0/)
