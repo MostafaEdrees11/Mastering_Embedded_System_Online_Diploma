@@ -14,7 +14,7 @@
 
 ### Second Term ![image](https://progress-bar.dev/0/?title=IN_PROGRESS&color=ff00ff)
 
-- [Unit 6: MCU Fundamentals](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/20/)
+- [Unit 6: MCU Fundamentals](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/60/)
 - [Unit 7: MCU Essential Peripherals](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/0/)
 - [Unit 8: MCU Interfacing](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/0/)
 - [Unit 9: MCU Timers/ADC](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) ![image](https://progress-bar.dev/0/)
