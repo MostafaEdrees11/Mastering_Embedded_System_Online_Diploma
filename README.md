@@ -1,7 +1,9 @@
-# Mastering Embedded Systems Online Diploma 
+# Author: Mostafa Mohamed Edrees
+
+### Instructor : Eng.Keroles Shenouda
+### Learn In Depth Online Diploma
 
 ## Contents
-
 __________________________________________________________________
 ### First Term ![image](https://progress-bar.dev/100/?title=DONE)
 __________________________________________________________________
