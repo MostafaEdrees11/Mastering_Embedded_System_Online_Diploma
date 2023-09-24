@@ -20,8 +20,8 @@ __________________________________________________________________
 __________________________________________________________________
 | Title | Progress |
 | ----- | ------|
-| [Unit 6: MCU Fundamentals](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) | ![image](https://progress-bar.dev/90/) |
-| [Unit 7: MCU Essential Peripherals](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) | ![image](https://progress-bar.dev/20/) |
+| [Unit 6: MCU Fundamentals](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/tree/master/Unit6_Microcontroller_Architecture) | ![image](https://progress-bar.dev/90/) |
+| [Unit 7: MCU Essential Peripherals](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/tree/master/Unit7_MCU_Essential_Peripherals) | ![image](https://progress-bar.dev/60/) |
 | [Unit 8: MCU Interfacing](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) | ![image](https://progress-bar.dev/0/) |
 | [Unit 9: MCU Timers/ADC](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) | ![image](https://progress-bar.dev/0/) |
 | [Unit 10: SW Testing/Validation](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma) | ![image](https://progress-bar.dev/0/) |
