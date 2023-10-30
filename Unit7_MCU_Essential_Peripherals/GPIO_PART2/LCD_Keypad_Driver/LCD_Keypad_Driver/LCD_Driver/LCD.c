@@ -180,3 +180,40 @@ void LCD_WRITE_STRING(s8* data)
 		data++;
 	}
 }
+
+void LCD_CUSTOM_CHAR(s8 *custom_char)
+{
+	LCD_WRITE_COMMAND(64);
+	while(*custom_char != 0)
+	{
+		LCD_WRITE_CHAR(*custom_char);
+		custom_char++;
+	}
+	LCD_WRITE_COMMAND(LCD_BEGIN_AT_FIRST_ROW);
+	LCD_WRITE_CHAR(0);
+	_delay_ms(1);
+}
+
+void LCD_WRITE_NUMBER(s32 number)
+{
+	s8 str[10];
+	
+	itoa(number,str,10);
+	
+	LCD_WRITE_STRING(str);
+}
+
+void LCD_Write_Real_Number(double real_num)
+{
+	s8 str[16];
+	
+	s8* sign = (real_num < 0) ? "-" : "";
+	
+	int int_num = real_num ;
+	float float_part = real_num - int_num;
+	int float_to_int = float_part * 10000 ;
+	
+	sprintf(str,"%s%d.%04d",sign,int_num,float_to_int);
+	
+	LCD_WRITE_STRING(str);
+}

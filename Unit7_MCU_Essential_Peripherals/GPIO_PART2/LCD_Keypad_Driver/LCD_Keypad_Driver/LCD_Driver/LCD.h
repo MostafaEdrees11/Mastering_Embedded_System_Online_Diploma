@@ -9,6 +9,8 @@
 #ifndef LCD_H_
 #define LCD_H_
 
+#include <stdlib.h>
+
 #define F_CPU						8000000UL
 
 #include "DIO_private.h"
@@ -29,8 +31,8 @@
 #define DATA_SHIFT					4
 
 /*			LCD MODE			*/
-//#define EIGHT_BIT_MODE
-#define FOUR_BIT_MODE
+#define EIGHT_BIT_MODE
+//#define FOUR_BIT_MODE
 
 /*			LCD Commands		*/
 #define LCD_FUNCTION_8BIT_2LINE		0X38
@@ -68,5 +70,8 @@ void LCD_WRITE_CHAR(u8 data);
 void LCD_WRITE_STRING(s8* data);
 void LCD_IS_BUSY(void);
 void LCD_CLR_SCREEN(void);
+void LCD_CUSTOM_CHAR(s8 *custom_char);
+void LCD_WRITE_NUMBER(s32 number);
+void LCD_Write_Real_Number(double Real_Num);
 
 #endif /* LCD_H_ */

@@ -8,6 +8,7 @@
 #include "LCD.h"
 #include "Keypad.h"
 
+//s8 heart[] = {31,1,1,2,18,20,24};
 int main(void)
 {
     /* Replace with your application code */
@@ -16,6 +17,9 @@ int main(void)
 	KEYPAD_INIT();
 	
 	s8 Pressed_Key;
+	
+	//LCD_Write_Real_Number(265.362);
+	//LCD_CUSTOM_CHAR(heart);
 	
     while (1) 
     {
