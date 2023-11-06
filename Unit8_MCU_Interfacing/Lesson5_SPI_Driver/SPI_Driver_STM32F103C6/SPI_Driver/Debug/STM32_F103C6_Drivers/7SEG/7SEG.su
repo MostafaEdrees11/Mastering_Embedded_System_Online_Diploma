@@ -1,0 +1,2 @@
+7SEG.c:20:6:HAL_7SEG_Init	16	static
+7SEG.c:69:6:HAL_7SEG_Display_Number	24	static
