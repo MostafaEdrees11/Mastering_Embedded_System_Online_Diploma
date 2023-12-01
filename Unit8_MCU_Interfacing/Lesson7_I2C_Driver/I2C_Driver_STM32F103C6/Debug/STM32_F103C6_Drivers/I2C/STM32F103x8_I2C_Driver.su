@@ -1,0 +1,17 @@
+STM32F103x8_I2C_Driver.c:45:6:I2C_Generate_Start_Condition	16	static
+STM32F103x8_I2C_Driver.c:83:13:I2C_Get_Flag_Status	40	static
+STM32F103x8_I2C_Driver.c:225:6:I2C_Send_Address	24	static
+STM32F103x8_I2C_Driver.c:262:6:I2C_Generate_Stop_Condition	16	static
+STM32F103x8_I2C_Driver.c:291:6:I2C_Acknowledge_Config	16	static
+STM32F103x8_I2C_Driver.c:315:6:Slave_States	24	static
+STM32F103x8_I2C_Driver.c:387:6:MCAL_I2C_Init	40	static
+STM32F103x8_I2C_Driver.c:537:6:MCAL_I2C_DeInit	16	static
+STM32F103x8_I2C_Driver.c:565:6:MCAL_GPIO_I2C_Set_Pins	24	static
+STM32F103x8_I2C_Driver.c:632:6:MCAL_I2C_Master_Tx	32	static
+STM32F103x8_I2C_Driver.c:707:6:MCAL_I2C_Master_Rx	32	static
+STM32F103x8_I2C_Driver.c:782:6:MCAL_I2C_Slave_Tx	16	static
+STM32F103x8_I2C_Driver.c:794:9:MCAL_I2C_Slave_Rx	16	static
+STM32F103x8_I2C_Driver.c:799:6:I2C1_EV_IRQHandler	32	static
+STM32F103x8_I2C_Driver.c:893:6:I2C1_ER_IRQHandler	4	static
+STM32F103x8_I2C_Driver.c:898:6:I2C2_EV_IRQHandler	4	static
+STM32F103x8_I2C_Driver.c:903:6:I2C2_ER_IRQHandler	4	static
