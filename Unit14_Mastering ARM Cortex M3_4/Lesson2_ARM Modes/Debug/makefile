@@ -50,6 +50,7 @@ all: ARM_Modes.elf secondary-outputs
 ARM_Modes.elf: $(OBJS) $(USER_OBJS) D:\Mastering\ Embedded\ System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering\ ARM\ Cortex\ M3_4\Lesson2_ARM\ Modes\STM32F103C6TX_FLASH.ld
 	arm-none-eabi-gcc -gdwarf-2 -o "ARM_Modes.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ARM_Modes.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	arm-none-eabi-gcc -gdwarf-2 -o "ARM_Modes.axf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ARM_Modes.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-objdump -D "ARM_Modes.axf" > ARM_Inline_Assembly.s
 	@echo 'Finished building target: $@'
 	@echo ' '
 
