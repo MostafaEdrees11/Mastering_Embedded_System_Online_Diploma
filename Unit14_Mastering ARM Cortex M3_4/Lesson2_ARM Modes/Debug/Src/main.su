@@ -1,7 +1,7 @@
-main.c:39:6:NMI_Handler	4	static
-main.c:44:6:HardFault_Handler	4	static
-main.c:49:6:MemManage_Handler	4	static
-main.c:54:6:BusFault_Handler	4	static
-main.c:66:6:SWITCH_CPU_ACCESS_LEVEL	16	static,ignoring_inline_asm
-main.c:87:6:EXTI9_CallBack	4	static
-main.c:94:5:main	32	static
+main.c:82:5:TaskA_Fun	24	static
+main.c:87:5:TaskB_Fun	24	static
+main.c:92:6:SVC_Handler	4	static,ignoring_inline_asm
+main.c:97:6:Main_OS	8	static,ignoring_inline_asm
+main.c:167:6:SWITCH_CPU_ACCESS_LEVEL	16	static,ignoring_inline_asm
+main.c:188:6:EXTI9_CallBack	4	static
+main.c:206:5:main	32	static
