@@ -1,51 +1,51 @@
 
-ARM_Modes.elf:     file format elf32-littlearm
+ARM_Modes.axf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
   0 .isr_vector   00000130  08000000  08000000  00010000  2**0
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  1 .text         00000a6c  08000130  08000130  00010130  2**2
+  1 .text         00000b64  08000130  08000130  00010130  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       0000000c  08000b9c  08000b9c  00010b9c  2**2
+  2 .rodata       0000000c  08000c94  08000c94  00010c94  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  08000ba8  08000ba8  00020004  2**0
+  3 .ARM.extab    00000000  08000ca0  08000ca0  00020004  2**0
                   CONTENTS
-  4 .ARM          00000000  08000ba8  08000ba8  00020004  2**0
+  4 .ARM          00000000  08000ca0  08000ca0  00020004  2**0
                   CONTENTS
-  5 .preinit_array 00000000  08000ba8  08000ba8  00020004  2**0
+  5 .preinit_array 00000000  08000ca0  08000ca0  00020004  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  6 .init_array   00000004  08000ba8  08000ba8  00010ba8  2**2
+  6 .init_array   00000004  08000ca0  08000ca0  00010ca0  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  7 .fini_array   00000004  08000bac  08000bac  00010bac  2**2
+  7 .fini_array   00000004  08000ca4  08000ca4  00010ca4  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  8 .data         00000004  20000000  08000bb0  00020000  2**2
+  8 .data         00000004  20000000  08000ca8  00020000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          00000070  20000004  08000bb4  00020004  2**2
+  9 .bss          00000070  20000004  08000cac  00020004  2**2
                   ALLOC
- 10 ._user_heap_stack 00000604  20000074  08000bb4  00020074  2**0
+ 10 ._user_heap_stack 00000604  20000074  08000cac  00020074  2**0
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00020004  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00002891  00000000  00000000  0002002d  2**0
+ 12 .debug_info   00002aa7  00000000  00000000  0002002d  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_abbrev 000006ba  00000000  00000000  000228be  2**0
+ 13 .debug_abbrev 0000067e  00000000  00000000  00022ad4  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_loc    00000850  00000000  00000000  00022f78  2**0
+ 14 .debug_loc    0000084c  00000000  00000000  00023152  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_aranges 00000158  00000000  00000000  000237c8  2**3
+ 15 .debug_aranges 00000168  00000000  00000000  000239a0  2**3
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_ranges 00000120  00000000  00000000  00023920  2**3
+ 16 .debug_ranges 00000130  00000000  00000000  00023b08  2**3
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_macro  00002548  00000000  00000000  00023a40  2**0
+ 17 .debug_macro  00003642  00000000  00000000  00023c38  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_line   00001510  00000000  00000000  00025f88  2**0
+ 18 .debug_line   0000164b  00000000  00000000  0002727a  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .debug_str    0000b157  00000000  00000000  00027498  2**0
+ 19 .debug_str    000114aa  00000000  00000000  000288c5  2**0
                   CONTENTS, READONLY, DEBUGGING
- 20 .comment      0000007b  00000000  00000000  000325ef  2**0
+ 20 .comment      0000007b  00000000  00000000  00039d6f  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  00000458  00000000  00000000  0003266c  2**2
+ 21 .debug_frame  00000478  00000000  00000000  00039dec  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -64,7 +64,7 @@ Disassembly of section .text:
  8000146:	bd10      	pop	{r4, pc}
  8000148:	20000004 	.word	0x20000004
  800014c:	00000000 	.word	0x00000000
- 8000150:	08000b84 	.word	0x08000b84
+ 8000150:	08000c7c 	.word	0x08000c7c
 
 08000154 <frame_dummy>:
  8000154:	b508      	push	{r3, lr}
@@ -76,7 +76,7 @@ Disassembly of section .text:
  8000162:	bd08      	pop	{r3, pc}
  8000164:	00000000 	.word	0x00000000
  8000168:	20000008 	.word	0x20000008
- 800016c:	08000b84 	.word	0x08000b84
+ 800016c:	08000c7c 	.word	0x08000c7c
 
 08000170 <Updata_EXTI>:
  * 						-EXTI_PIN & EXTI_Trigger_Case & EXTI_IRQ_EN & PF_IRQ_CallBack
@@ -1350,502 +1350,682 @@ void MCAL_GPIO_Init (GPIO_TypeDef *GPIOx, GPIO_PIN_Configuration_t *PIN_Config)
  80008d0:	46bd      	mov	sp, r7
  80008d2:	bd90      	pop	{r4, r7, pc}
 
-080008d4 <TaskA_Fun>:
+080008d4 <MCAL_GPIO_WritePin>:
+ * @param [in] 	-Value: The value that will write to PIN (Two Values based on @ref GPIO_PIN_state >> SET or RESET).
+ * @retval 		-none
+ * Note			-none
+================================================================**/
+void MCAL_GPIO_WritePin (GPIO_TypeDef *GPIOx, uint16_t PinNumber, uint8_t Value)
+{
+ 80008d4:	b480      	push	{r7}
+ 80008d6:	b083      	sub	sp, #12
+ 80008d8:	af00      	add	r7, sp, #0
+ 80008da:	6078      	str	r0, [r7, #4]
+ 80008dc:	460b      	mov	r3, r1
+ 80008de:	807b      	strh	r3, [r7, #2]
+ 80008e0:	4613      	mov	r3, r2
+ 80008e2:	707b      	strb	r3, [r7, #1]
+	 * Bits 15:0 BRy: Port x Reset bit y (y= 0 .. 15)
+	 * These bits are write-only and can be accessed in Word mode only.
+	 * 0: No action on the corresponding ODRx bit
+	 * 1: Reset the corresponding ODRx bit
+	 */
+	if(Value == GPIO_PIN_SET)
+ 80008e4:	787b      	ldrb	r3, [r7, #1]
+ 80008e6:	2b01      	cmp	r3, #1
+ 80008e8:	d103      	bne.n	80008f2 <MCAL_GPIO_WritePin+0x1e>
+	{
+		GPIOx->BSRR = (uint32_t)PinNumber;
+ 80008ea:	887a      	ldrh	r2, [r7, #2]
+ 80008ec:	687b      	ldr	r3, [r7, #4]
+ 80008ee:	611a      	str	r2, [r3, #16]
+	}
+	else if(Value == GPIO_PIN_RESET)
+	{
+		GPIOx->BRR = (uint32_t)PinNumber;
+	}
+}
+ 80008f0:	e005      	b.n	80008fe <MCAL_GPIO_WritePin+0x2a>
+	else if(Value == GPIO_PIN_RESET)
+ 80008f2:	787b      	ldrb	r3, [r7, #1]
+ 80008f4:	2b00      	cmp	r3, #0
+ 80008f6:	d102      	bne.n	80008fe <MCAL_GPIO_WritePin+0x2a>
+		GPIOx->BRR = (uint32_t)PinNumber;
+ 80008f8:	887a      	ldrh	r2, [r7, #2]
+ 80008fa:	687b      	ldr	r3, [r7, #4]
+ 80008fc:	615a      	str	r2, [r3, #20]
+}
+ 80008fe:	bf00      	nop
+ 8000900:	370c      	adds	r7, #12
+ 8000902:	46bd      	mov	sp, r7
+ 8000904:	bc80      	pop	{r7}
+ 8000906:	4770      	bx	lr
+
+08000908 <TaskA_Fun>:
+		AND R0, R0, R1 \n\t MSR CONTROL, R0")
 
 #define OS_Generate_Exception_Inerrupt					__asm("SVC #0x3")
 
-
-int TaskA_Fun(int a, int b, int c)
+void TaskA_Fun(void)
 {
- 80008d4:	b480      	push	{r7}
- 80008d6:	b085      	sub	sp, #20
- 80008d8:	af00      	add	r7, sp, #0
- 80008da:	60f8      	str	r0, [r7, #12]
- 80008dc:	60b9      	str	r1, [r7, #8]
- 80008de:	607a      	str	r2, [r7, #4]
-	return a+b+c;
- 80008e0:	68fa      	ldr	r2, [r7, #12]
- 80008e2:	68bb      	ldr	r3, [r7, #8]
- 80008e4:	441a      	add	r2, r3
- 80008e6:	687b      	ldr	r3, [r7, #4]
- 80008e8:	4413      	add	r3, r2
+ 8000908:	b580      	push	{r7, lr}
+ 800090a:	af00      	add	r7, sp, #0
+	/* Turn on Led on PortB Pin0 & Turn off Led on PortB Pin1 */
+	MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
+ 800090c:	2201      	movs	r2, #1
+ 800090e:	2101      	movs	r1, #1
+ 8000910:	4804      	ldr	r0, [pc, #16]	; (8000924 <TaskA_Fun+0x1c>)
+ 8000912:	f7ff ffdf 	bl	80008d4 <MCAL_GPIO_WritePin>
+	MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 0);
+ 8000916:	2200      	movs	r2, #0
+ 8000918:	2102      	movs	r1, #2
+ 800091a:	4802      	ldr	r0, [pc, #8]	; (8000924 <TaskA_Fun+0x1c>)
+ 800091c:	f7ff ffda 	bl	80008d4 <MCAL_GPIO_WritePin>
 }
- 80008ea:	4618      	mov	r0, r3
- 80008ec:	3714      	adds	r7, #20
- 80008ee:	46bd      	mov	sp, r7
- 80008f0:	bc80      	pop	{r7}
- 80008f2:	4770      	bx	lr
+ 8000920:	bf00      	nop
+ 8000922:	bd80      	pop	{r7, pc}
+ 8000924:	40010c00 	.word	0x40010c00
 
-080008f4 <TaskB_Fun>:
+08000928 <TaskB_Fun>:
 
-int TaskB_Fun(int a, int b, int c, int d)
+void TaskB_Fun(void)
 {
- 80008f4:	b480      	push	{r7}
- 80008f6:	b085      	sub	sp, #20
- 80008f8:	af00      	add	r7, sp, #0
- 80008fa:	60f8      	str	r0, [r7, #12]
- 80008fc:	60b9      	str	r1, [r7, #8]
- 80008fe:	607a      	str	r2, [r7, #4]
- 8000900:	603b      	str	r3, [r7, #0]
-	return a+b+c+d;
- 8000902:	68fa      	ldr	r2, [r7, #12]
- 8000904:	68bb      	ldr	r3, [r7, #8]
- 8000906:	441a      	add	r2, r3
- 8000908:	687b      	ldr	r3, [r7, #4]
- 800090a:	441a      	add	r2, r3
- 800090c:	683b      	ldr	r3, [r7, #0]
- 800090e:	4413      	add	r3, r2
+ 8000928:	b580      	push	{r7, lr}
+ 800092a:	af00      	add	r7, sp, #0
+	/* Turn on Led on PortB Pin1 & Turn off Led on PortB Pin0 */
+	MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1);
+ 800092c:	2201      	movs	r2, #1
+ 800092e:	2102      	movs	r1, #2
+ 8000930:	4804      	ldr	r0, [pc, #16]	; (8000944 <TaskB_Fun+0x1c>)
+ 8000932:	f7ff ffcf 	bl	80008d4 <MCAL_GPIO_WritePin>
+	MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
+ 8000936:	2200      	movs	r2, #0
+ 8000938:	2101      	movs	r1, #1
+ 800093a:	4802      	ldr	r0, [pc, #8]	; (8000944 <TaskB_Fun+0x1c>)
+ 800093c:	f7ff ffca 	bl	80008d4 <MCAL_GPIO_WritePin>
 }
- 8000910:	4618      	mov	r0, r3
- 8000912:	3714      	adds	r7, #20
- 8000914:	46bd      	mov	sp, r7
- 8000916:	bc80      	pop	{r7}
- 8000918:	4770      	bx	lr
+ 8000940:	bf00      	nop
+ 8000942:	bd80      	pop	{r7, pc}
+ 8000944:	40010c00 	.word	0x40010c00
 
-0800091a <SVC_Handler>:
+08000948 <OS_SVC_Services>:
 
-void SVC_Handler(void)
+void OS_SVC_Services(unsigned int *Stack_Pointer)
 {
- 800091a:	b480      	push	{r7}
- 800091c:	af00      	add	r7, sp, #0
-	OS_Switch_Unprivileged_to_Privileged;
- 800091e:	f3ef 8014 	mrs	r0, CONTROL
- 8000922:	f04f 0106 	mov.w	r1, #6
- 8000926:	ea00 0001 	and.w	r0, r0, r1
- 800092a:	f380 8814 	msr	CONTROL, r0
-}
- 800092e:	bf00      	nop
- 8000930:	46bd      	mov	sp, r7
- 8000932:	bc80      	pop	{r7}
- 8000934:	4770      	bx	lr
-	...
-
-08000938 <Main_OS>:
-
-void Main_OS(void)
-{
- 8000938:	b580      	push	{r7, lr}
- 800093a:	af00      	add	r7, sp, #0
-	/* OS Stack */
-	_E_MSP = (_S_MSP - OS_Stack_Size);
- 800093c:	4b39      	ldr	r3, [pc, #228]	; (8000a24 <Main_OS+0xec>)
- 800093e:	681b      	ldr	r3, [r3, #0]
- 8000940:	f5a3 7300 	sub.w	r3, r3, #512	; 0x200
- 8000944:	4a38      	ldr	r2, [pc, #224]	; (8000a28 <Main_OS+0xf0>)
- 8000946:	6013      	str	r3, [r2, #0]
-
-	/* TaskA Stack */
-	_S_PSP_TaskA = (_E_MSP - 8);
- 8000948:	4b37      	ldr	r3, [pc, #220]	; (8000a28 <Main_OS+0xf0>)
- 800094a:	681b      	ldr	r3, [r3, #0]
- 800094c:	3b08      	subs	r3, #8
- 800094e:	4a37      	ldr	r2, [pc, #220]	; (8000a2c <Main_OS+0xf4>)
- 8000950:	6013      	str	r3, [r2, #0]
-	_E_PSP_TaskA = (_S_PSP_TaskA - TaskA_Stack_Size);
- 8000952:	4b36      	ldr	r3, [pc, #216]	; (8000a2c <Main_OS+0xf4>)
+ 8000948:	b480      	push	{r7}
+ 800094a:	b085      	sub	sp, #20
+ 800094c:	af00      	add	r7, sp, #0
+ 800094e:	6078      	str	r0, [r7, #4]
+	unsigned char SVC_ID;
+	SVC_ID = *((unsigned char *)(((unsigned char *)Stack_Pointer[6])-2));
+ 8000950:	687b      	ldr	r3, [r7, #4]
+ 8000952:	3318      	adds	r3, #24
  8000954:	681b      	ldr	r3, [r3, #0]
- 8000956:	3b64      	subs	r3, #100	; 0x64
- 8000958:	4a35      	ldr	r2, [pc, #212]	; (8000a30 <Main_OS+0xf8>)
- 800095a:	6013      	str	r3, [r2, #0]
+ 8000956:	3b02      	subs	r3, #2
+ 8000958:	781b      	ldrb	r3, [r3, #0]
+ 800095a:	73fb      	strb	r3, [r7, #15]
 
-	/* TaskB Stack */
-	_S_PSP_TaskB = (_E_PSP_TaskA - 8);
- 800095c:	4b34      	ldr	r3, [pc, #208]	; (8000a30 <Main_OS+0xf8>)
- 800095e:	681b      	ldr	r3, [r3, #0]
- 8000960:	3b08      	subs	r3, #8
- 8000962:	4a34      	ldr	r2, [pc, #208]	; (8000a34 <Main_OS+0xfc>)
- 8000964:	6013      	str	r3, [r2, #0]
-	_E_PSP_TaskB = (_S_PSP_TaskB - TaskB_Stack_Size);
- 8000966:	4b33      	ldr	r3, [pc, #204]	; (8000a34 <Main_OS+0xfc>)
- 8000968:	681b      	ldr	r3, [r3, #0]
- 800096a:	3b64      	subs	r3, #100	; 0x64
- 800096c:	4a32      	ldr	r2, [pc, #200]	; (8000a38 <Main_OS+0x100>)
- 800096e:	6013      	str	r3, [r2, #0]
-
-	while(1)
-	{
-		__asm("NOP");
- 8000970:	bf00      	nop
-
-		if(TaskA_Flag == 1)
- 8000972:	4b32      	ldr	r3, [pc, #200]	; (8000a3c <Main_OS+0x104>)
- 8000974:	781b      	ldrb	r3, [r3, #0]
- 8000976:	2b01      	cmp	r3, #1
- 8000978:	d127      	bne.n	80009ca <Main_OS+0x92>
-		{
-			/* Set PSP with _S_PSP_TaskA */
-			OS_Set_PSP_Val(_S_PSP_TaskA);
- 800097a:	4b2c      	ldr	r3, [pc, #176]	; (8000a2c <Main_OS+0xf4>)
- 800097c:	681b      	ldr	r3, [r3, #0]
- 800097e:	4618      	mov	r0, r3
- 8000980:	f380 8809 	msr	PSP, r0
-
-			/* Set SP --> PSP not MSP */
-			OS_Set_SP_shadowto_PSP;
- 8000984:	f3ef 8014 	mrs	r0, CONTROL
- 8000988:	f04f 0102 	mov.w	r1, #2
- 800098c:	ea40 0001 	orr.w	r0, r0, r1
- 8000990:	f380 8814 	msr	CONTROL, r0
-
-			/* Switch from privileged --> unprivileged*/
-			OS_Switch_Privileged_to_Unprivileged;
- 8000994:	f3ef 8014 	mrs	r0, CONTROL
- 8000998:	f04f 0101 	mov.w	r1, #1
- 800099c:	ea40 0001 	orr.w	r0, r0, r1
- 80009a0:	f380 8814 	msr	CONTROL, r0
-
-			/* Call TaskA */
-			TaskA_Flag = TaskA_Fun(1, 2, 3);
- 80009a4:	2203      	movs	r2, #3
- 80009a6:	2102      	movs	r1, #2
- 80009a8:	2001      	movs	r0, #1
- 80009aa:	f7ff ff93 	bl	80008d4 <TaskA_Fun>
- 80009ae:	4603      	mov	r3, r0
- 80009b0:	b2da      	uxtb	r2, r3
- 80009b2:	4b22      	ldr	r3, [pc, #136]	; (8000a3c <Main_OS+0x104>)
- 80009b4:	701a      	strb	r2, [r3, #0]
-
-			/* Switch from unprivileged --> privileged*/
-			OS_Generate_Exception_Inerrupt;
- 80009b6:	df03      	svc	3
-
-			/* Set SP --> MSP not PSP */
-			OS_Set_SP_shadowto_MSP;
- 80009b8:	f3ef 8014 	mrs	r0, CONTROL
- 80009bc:	f04f 0105 	mov.w	r1, #5
- 80009c0:	ea00 0001 	and.w	r0, r0, r1
- 80009c4:	f380 8814 	msr	CONTROL, r0
- 80009c8:	e7d2      	b.n	8000970 <Main_OS+0x38>
-		}
-		else if(TaskB_Flag == 1)
- 80009ca:	4b1d      	ldr	r3, [pc, #116]	; (8000a40 <Main_OS+0x108>)
- 80009cc:	781b      	ldrb	r3, [r3, #0]
- 80009ce:	2b01      	cmp	r3, #1
- 80009d0:	d1ce      	bne.n	8000970 <Main_OS+0x38>
-		{
-			/* Set PSP with _S_PSP_TaskB */
-			OS_Set_PSP_Val(_S_PSP_TaskB);
- 80009d2:	4b18      	ldr	r3, [pc, #96]	; (8000a34 <Main_OS+0xfc>)
- 80009d4:	681b      	ldr	r3, [r3, #0]
- 80009d6:	4618      	mov	r0, r3
- 80009d8:	f380 8809 	msr	PSP, r0
-
-			/* Set SP --> PSP not MSP */
-			OS_Set_SP_shadowto_PSP;
- 80009dc:	f3ef 8014 	mrs	r0, CONTROL
- 80009e0:	f04f 0102 	mov.w	r1, #2
- 80009e4:	ea40 0001 	orr.w	r0, r0, r1
- 80009e8:	f380 8814 	msr	CONTROL, r0
-
-			/* Switch from privileged --> unprivileged*/
-			OS_Switch_Privileged_to_Unprivileged;
- 80009ec:	f3ef 8014 	mrs	r0, CONTROL
- 80009f0:	f04f 0101 	mov.w	r1, #1
- 80009f4:	ea40 0001 	orr.w	r0, r0, r1
- 80009f8:	f380 8814 	msr	CONTROL, r0
-
-			/* Call TaskB */
-			TaskB_Flag = TaskB_Fun(1, 2, 3, 4);
- 80009fc:	2304      	movs	r3, #4
- 80009fe:	2203      	movs	r2, #3
- 8000a00:	2102      	movs	r1, #2
- 8000a02:	2001      	movs	r0, #1
- 8000a04:	f7ff ff76 	bl	80008f4 <TaskB_Fun>
- 8000a08:	4603      	mov	r3, r0
- 8000a0a:	b2da      	uxtb	r2, r3
- 8000a0c:	4b0c      	ldr	r3, [pc, #48]	; (8000a40 <Main_OS+0x108>)
- 8000a0e:	701a      	strb	r2, [r3, #0]
-
-			/* Switch from unprivileged --> privileged*/
-			OS_Generate_Exception_Inerrupt;
- 8000a10:	df03      	svc	3
-
-			/* Set SP --> MSP not PSP */
-			OS_Set_SP_shadowto_MSP;
- 8000a12:	f3ef 8014 	mrs	r0, CONTROL
- 8000a16:	f04f 0105 	mov.w	r1, #5
- 8000a1a:	ea00 0001 	and.w	r0, r0, r1
- 8000a1e:	f380 8814 	msr	CONTROL, r0
-		__asm("NOP");
- 8000a22:	e7a5      	b.n	8000970 <Main_OS+0x38>
- 8000a24:	20000000 	.word	0x20000000
- 8000a28:	20000060 	.word	0x20000060
- 8000a2c:	20000068 	.word	0x20000068
- 8000a30:	20000064 	.word	0x20000064
- 8000a34:	20000070 	.word	0x20000070
- 8000a38:	2000006c 	.word	0x2000006c
- 8000a3c:	20000021 	.word	0x20000021
- 8000a40:	20000022 	.word	0x20000022
-
-08000a44 <EXTI9_CallBack>:
+	switch(SVC_ID)
+ 800095c:	7bfb      	ldrb	r3, [r7, #15]
+ 800095e:	2b01      	cmp	r3, #1
+ 8000960:	d002      	beq.n	8000968 <OS_SVC_Services+0x20>
+ 8000962:	2b02      	cmp	r3, #2
+ 8000964:	d016      	beq.n	8000994 <OS_SVC_Services+0x4c>
+		OS_Set_PSP_Val(_S_PSP_TaskB);
+		OS_Set_SP_shadowto_PSP;
+		OS_Switch_Privileged_to_Unprivileged;
 		break;
 	}
 }
+ 8000966:	e02b      	b.n	80009c0 <OS_SVC_Services+0x78>
+		OS_Set_PSP_Val(_S_PSP_TaskA);
+ 8000968:	4b18      	ldr	r3, [pc, #96]	; (80009cc <OS_SVC_Services+0x84>)
+ 800096a:	681b      	ldr	r3, [r3, #0]
+ 800096c:	4618      	mov	r0, r3
+ 800096e:	f380 8809 	msr	PSP, r0
+		OS_Set_SP_shadowto_PSP;
+ 8000972:	f3ef 8014 	mrs	r0, CONTROL
+ 8000976:	f04f 0102 	mov.w	r1, #2
+ 800097a:	ea40 0001 	orr.w	r0, r0, r1
+ 800097e:	f380 8814 	msr	CONTROL, r0
+		OS_Switch_Privileged_to_Unprivileged;
+ 8000982:	f3ef 8014 	mrs	r0, CONTROL
+ 8000986:	f04f 0101 	mov.w	r1, #1
+ 800098a:	ea40 0001 	orr.w	r0, r0, r1
+ 800098e:	f380 8814 	msr	CONTROL, r0
+		break;
+ 8000992:	e015      	b.n	80009c0 <OS_SVC_Services+0x78>
+		OS_Set_PSP_Val(_S_PSP_TaskB);
+ 8000994:	4b0e      	ldr	r3, [pc, #56]	; (80009d0 <OS_SVC_Services+0x88>)
+ 8000996:	681b      	ldr	r3, [r3, #0]
+ 8000998:	4618      	mov	r0, r3
+ 800099a:	f380 8809 	msr	PSP, r0
+		OS_Set_SP_shadowto_PSP;
+ 800099e:	f3ef 8014 	mrs	r0, CONTROL
+ 80009a2:	f04f 0102 	mov.w	r1, #2
+ 80009a6:	ea40 0001 	orr.w	r0, r0, r1
+ 80009aa:	f380 8814 	msr	CONTROL, r0
+		OS_Switch_Privileged_to_Unprivileged;
+ 80009ae:	f3ef 8014 	mrs	r0, CONTROL
+ 80009b2:	f04f 0101 	mov.w	r1, #1
+ 80009b6:	ea40 0001 	orr.w	r0, r0, r1
+ 80009ba:	f380 8814 	msr	CONTROL, r0
+		break;
+ 80009be:	bf00      	nop
+}
+ 80009c0:	bf00      	nop
+ 80009c2:	3714      	adds	r7, #20
+ 80009c4:	46bd      	mov	sp, r7
+ 80009c6:	bc80      	pop	{r7}
+ 80009c8:	4770      	bx	lr
+ 80009ca:	bf00      	nop
+ 80009cc:	20000068 	.word	0x20000068
+ 80009d0:	20000070 	.word	0x20000070
 
-void EXTI9_CallBack(void)
+080009d4 <OS_SVC_Set_First_Task>:
+
+void OS_SVC_Set_First_Task(int SVC_ID)
 {
- 8000a44:	b480      	push	{r7}
- 8000a46:	af00      	add	r7, sp, #0
-	if(IRQ_Flag == 0)
- 8000a48:	4b0c      	ldr	r3, [pc, #48]	; (8000a7c <EXTI9_CallBack+0x38>)
- 8000a4a:	781b      	ldrb	r3, [r3, #0]
- 8000a4c:	2b00      	cmp	r3, #0
- 8000a4e:	d106      	bne.n	8000a5e <EXTI9_CallBack+0x1a>
+ 80009d4:	b480      	push	{r7}
+ 80009d6:	b083      	sub	sp, #12
+ 80009d8:	af00      	add	r7, sp, #0
+ 80009da:	6078      	str	r0, [r7, #4]
+	switch(SVC_ID)
+ 80009dc:	687b      	ldr	r3, [r7, #4]
+ 80009de:	2b01      	cmp	r3, #1
+ 80009e0:	d002      	beq.n	80009e8 <OS_SVC_Set_First_Task+0x14>
+ 80009e2:	2b02      	cmp	r3, #2
+ 80009e4:	d002      	beq.n	80009ec <OS_SVC_Set_First_Task+0x18>
+
+	case 2:	//TaskB
+		__asm("SVC #2");
+		break;
+	}
+}
+ 80009e6:	e003      	b.n	80009f0 <OS_SVC_Set_First_Task+0x1c>
+		__asm("SVC #1");
+ 80009e8:	df01      	svc	1
+		break;
+ 80009ea:	e001      	b.n	80009f0 <OS_SVC_Set_First_Task+0x1c>
+		__asm("SVC #2");
+ 80009ec:	df02      	svc	2
+		break;
+ 80009ee:	bf00      	nop
+}
+ 80009f0:	bf00      	nop
+ 80009f2:	370c      	adds	r7, #12
+ 80009f4:	46bd      	mov	sp, r7
+ 80009f6:	bc80      	pop	{r7}
+ 80009f8:	4770      	bx	lr
+
+080009fa <SVC_Handler>:
+
+__attribute((naked)) void SVC_Handler(void)
+{
+	// Check which stack we use before stacking MSP or PSP
+	__asm("TST LR, #0x4 \n\t"
+ 80009fa:	f01e 0f04 	tst.w	lr, #4
+ 80009fe:	bf0c      	ite	eq
+ 8000a00:	f3ef 8008 	mrseq	r0, MSP
+ 8000a04:	f3ef 8009 	mrsne	r0, PSP
+ 8000a08:	f7ff bf9e 	b.w	8000948 <OS_SVC_Services>
+			"ITE EQ \n\t"
+			"MRSEQ R0, MSP \n\t"
+			"MRSNE R0, PSP \n\t"
+			"B OS_SVC_Services");
+}
+ 8000a0c:	bf00      	nop
+	...
+
+08000a10 <PendSV_Handler>:
+
+void PendSV_Handler(void)
+{
+ 8000a10:	b480      	push	{r7}
+ 8000a12:	af00      	add	r7, sp, #0
+	if(Task_Flag == TaskA)		//switch to TaskA
+ 8000a14:	4b13      	ldr	r3, [pc, #76]	; (8000a64 <PendSV_Handler+0x54>)
+ 8000a16:	781b      	ldrb	r3, [r3, #0]
+ 8000a18:	2b01      	cmp	r3, #1
+ 8000a1a:	d10d      	bne.n	8000a38 <PendSV_Handler+0x28>
 	{
-		TaskA_Flag = 1;
- 8000a50:	4b0b      	ldr	r3, [pc, #44]	; (8000a80 <EXTI9_CallBack+0x3c>)
- 8000a52:	2201      	movs	r2, #1
- 8000a54:	701a      	strb	r2, [r3, #0]
-		IRQ_Flag = 1;
- 8000a56:	4b09      	ldr	r3, [pc, #36]	; (8000a7c <EXTI9_CallBack+0x38>)
- 8000a58:	2201      	movs	r2, #1
- 8000a5a:	701a      	strb	r2, [r3, #0]
+		OS_Set_PSP_Val(_S_PSP_TaskA);
+ 8000a1c:	4b12      	ldr	r3, [pc, #72]	; (8000a68 <PendSV_Handler+0x58>)
+ 8000a1e:	681b      	ldr	r3, [r3, #0]
+ 8000a20:	4618      	mov	r0, r3
+ 8000a22:	f380 8809 	msr	PSP, r0
+		OS_Set_SP_shadowto_PSP;
+ 8000a26:	f3ef 8014 	mrs	r0, CONTROL
+ 8000a2a:	f04f 0102 	mov.w	r1, #2
+ 8000a2e:	ea40 0001 	orr.w	r0, r0, r1
+ 8000a32:	f380 8814 	msr	CONTROL, r0
 	}
 	else
 	{
 
 	}
 }
- 8000a5c:	e009      	b.n	8000a72 <EXTI9_CallBack+0x2e>
-	else if(IRQ_Flag == 1)
- 8000a5e:	4b07      	ldr	r3, [pc, #28]	; (8000a7c <EXTI9_CallBack+0x38>)
- 8000a60:	781b      	ldrb	r3, [r3, #0]
- 8000a62:	2b01      	cmp	r3, #1
- 8000a64:	d105      	bne.n	8000a72 <EXTI9_CallBack+0x2e>
-		TaskB_Flag = 1;
- 8000a66:	4b07      	ldr	r3, [pc, #28]	; (8000a84 <EXTI9_CallBack+0x40>)
- 8000a68:	2201      	movs	r2, #1
- 8000a6a:	701a      	strb	r2, [r3, #0]
-		IRQ_Flag = 0;
- 8000a6c:	4b03      	ldr	r3, [pc, #12]	; (8000a7c <EXTI9_CallBack+0x38>)
- 8000a6e:	2200      	movs	r2, #0
- 8000a70:	701a      	strb	r2, [r3, #0]
+ 8000a36:	e010      	b.n	8000a5a <PendSV_Handler+0x4a>
+	else if(Task_Flag == TaskB)	//switch to TaskB
+ 8000a38:	4b0a      	ldr	r3, [pc, #40]	; (8000a64 <PendSV_Handler+0x54>)
+ 8000a3a:	781b      	ldrb	r3, [r3, #0]
+ 8000a3c:	2b02      	cmp	r3, #2
+ 8000a3e:	d10c      	bne.n	8000a5a <PendSV_Handler+0x4a>
+		OS_Set_PSP_Val(_S_PSP_TaskB);
+ 8000a40:	4b0a      	ldr	r3, [pc, #40]	; (8000a6c <PendSV_Handler+0x5c>)
+ 8000a42:	681b      	ldr	r3, [r3, #0]
+ 8000a44:	4618      	mov	r0, r3
+ 8000a46:	f380 8809 	msr	PSP, r0
+		OS_Set_SP_shadowto_PSP;
+ 8000a4a:	f3ef 8014 	mrs	r0, CONTROL
+ 8000a4e:	f04f 0102 	mov.w	r1, #2
+ 8000a52:	ea40 0001 	orr.w	r0, r0, r1
+ 8000a56:	f380 8814 	msr	CONTROL, r0
 }
- 8000a72:	bf00      	nop
- 8000a74:	46bd      	mov	sp, r7
- 8000a76:	bc80      	pop	{r7}
- 8000a78:	4770      	bx	lr
- 8000a7a:	bf00      	nop
- 8000a7c:	20000020 	.word	0x20000020
- 8000a80:	20000021 	.word	0x20000021
- 8000a84:	20000022 	.word	0x20000022
+ 8000a5a:	bf00      	nop
+ 8000a5c:	46bd      	mov	sp, r7
+ 8000a5e:	bc80      	pop	{r7}
+ 8000a60:	4770      	bx	lr
+ 8000a62:	bf00      	nop
+ 8000a64:	20000021 	.word	0x20000021
+ 8000a68:	20000068 	.word	0x20000068
+ 8000a6c:	20000070 	.word	0x20000070
 
-08000a88 <main>:
+08000a70 <Main_OS>:
+
+void Main_OS(void)
+{
+ 8000a70:	b580      	push	{r7, lr}
+ 8000a72:	af00      	add	r7, sp, #0
+	/* OS Stack */
+	_E_MSP = (_S_MSP - OS_Stack_Size);
+ 8000a74:	4b16      	ldr	r3, [pc, #88]	; (8000ad0 <Main_OS+0x60>)
+ 8000a76:	681b      	ldr	r3, [r3, #0]
+ 8000a78:	f5a3 7300 	sub.w	r3, r3, #512	; 0x200
+ 8000a7c:	4a15      	ldr	r2, [pc, #84]	; (8000ad4 <Main_OS+0x64>)
+ 8000a7e:	6013      	str	r3, [r2, #0]
+
+	/* TaskA Stack */
+	_S_PSP_TaskA = (_E_MSP - 8);
+ 8000a80:	4b14      	ldr	r3, [pc, #80]	; (8000ad4 <Main_OS+0x64>)
+ 8000a82:	681b      	ldr	r3, [r3, #0]
+ 8000a84:	3b08      	subs	r3, #8
+ 8000a86:	4a14      	ldr	r2, [pc, #80]	; (8000ad8 <Main_OS+0x68>)
+ 8000a88:	6013      	str	r3, [r2, #0]
+	_E_PSP_TaskA = (_S_PSP_TaskA - TaskA_Stack_Size);
+ 8000a8a:	4b13      	ldr	r3, [pc, #76]	; (8000ad8 <Main_OS+0x68>)
+ 8000a8c:	681b      	ldr	r3, [r3, #0]
+ 8000a8e:	3b64      	subs	r3, #100	; 0x64
+ 8000a90:	4a12      	ldr	r2, [pc, #72]	; (8000adc <Main_OS+0x6c>)
+ 8000a92:	6013      	str	r3, [r2, #0]
+
+	/* TaskB Stack */
+	_S_PSP_TaskB = (_E_PSP_TaskA - 8);
+ 8000a94:	4b11      	ldr	r3, [pc, #68]	; (8000adc <Main_OS+0x6c>)
+ 8000a96:	681b      	ldr	r3, [r3, #0]
+ 8000a98:	3b08      	subs	r3, #8
+ 8000a9a:	4a11      	ldr	r2, [pc, #68]	; (8000ae0 <Main_OS+0x70>)
+ 8000a9c:	6013      	str	r3, [r2, #0]
+	_E_PSP_TaskB = (_S_PSP_TaskB - TaskB_Stack_Size);
+ 8000a9e:	4b10      	ldr	r3, [pc, #64]	; (8000ae0 <Main_OS+0x70>)
+ 8000aa0:	681b      	ldr	r3, [r3, #0]
+ 8000aa2:	3b64      	subs	r3, #100	; 0x64
+ 8000aa4:	4a0f      	ldr	r2, [pc, #60]	; (8000ae4 <Main_OS+0x74>)
+ 8000aa6:	6013      	str	r3, [r2, #0]
+
+	OS_SVC_Set_First_Task(Task_Flag);
+ 8000aa8:	4b0f      	ldr	r3, [pc, #60]	; (8000ae8 <Main_OS+0x78>)
+ 8000aaa:	781b      	ldrb	r3, [r3, #0]
+ 8000aac:	4618      	mov	r0, r3
+ 8000aae:	f7ff ff91 	bl	80009d4 <OS_SVC_Set_First_Task>
+
+	while(1)
+	{
+		if(Task_Flag == TaskA)
+ 8000ab2:	4b0d      	ldr	r3, [pc, #52]	; (8000ae8 <Main_OS+0x78>)
+ 8000ab4:	781b      	ldrb	r3, [r3, #0]
+ 8000ab6:	2b01      	cmp	r3, #1
+ 8000ab8:	d102      	bne.n	8000ac0 <Main_OS+0x50>
+		{
+			TaskA_Fun();
+ 8000aba:	f7ff ff25 	bl	8000908 <TaskA_Fun>
+ 8000abe:	e7f8      	b.n	8000ab2 <Main_OS+0x42>
+		}
+		else if(Task_Flag == TaskB)
+ 8000ac0:	4b09      	ldr	r3, [pc, #36]	; (8000ae8 <Main_OS+0x78>)
+ 8000ac2:	781b      	ldrb	r3, [r3, #0]
+ 8000ac4:	2b02      	cmp	r3, #2
+ 8000ac6:	d1f4      	bne.n	8000ab2 <Main_OS+0x42>
+		{
+			TaskB_Fun();
+ 8000ac8:	f7ff ff2e 	bl	8000928 <TaskB_Fun>
+		if(Task_Flag == TaskA)
+ 8000acc:	e7f1      	b.n	8000ab2 <Main_OS+0x42>
+ 8000ace:	bf00      	nop
+ 8000ad0:	20000000 	.word	0x20000000
+ 8000ad4:	20000060 	.word	0x20000060
+ 8000ad8:	20000068 	.word	0x20000068
+ 8000adc:	20000064 	.word	0x20000064
+ 8000ae0:	20000070 	.word	0x20000070
+ 8000ae4:	2000006c 	.word	0x2000006c
+ 8000ae8:	20000021 	.word	0x20000021
+
+08000aec <EXTI9_CallBack>:
+	privileged,
+	unprivileged
+};
+
+void EXTI9_CallBack(void)
+{
+ 8000aec:	b480      	push	{r7}
+ 8000aee:	af00      	add	r7, sp, #0
+	/* rise the flag of the task that its own order */
+	if(IRQ_Flag == 0)
+ 8000af0:	4b0f      	ldr	r3, [pc, #60]	; (8000b30 <EXTI9_CallBack+0x44>)
+ 8000af2:	781b      	ldrb	r3, [r3, #0]
+ 8000af4:	2b00      	cmp	r3, #0
+ 8000af6:	d106      	bne.n	8000b06 <EXTI9_CallBack+0x1a>
+	{
+		Task_Flag = TaskA;
+ 8000af8:	4b0e      	ldr	r3, [pc, #56]	; (8000b34 <EXTI9_CallBack+0x48>)
+ 8000afa:	2201      	movs	r2, #1
+ 8000afc:	701a      	strb	r2, [r3, #0]
+		IRQ_Flag = 1;
+ 8000afe:	4b0c      	ldr	r3, [pc, #48]	; (8000b30 <EXTI9_CallBack+0x44>)
+ 8000b00:	2201      	movs	r2, #1
+ 8000b02:	701a      	strb	r2, [r3, #0]
+ 8000b04:	e009      	b.n	8000b1a <EXTI9_CallBack+0x2e>
+	}
+	else if(IRQ_Flag == 1)
+ 8000b06:	4b0a      	ldr	r3, [pc, #40]	; (8000b30 <EXTI9_CallBack+0x44>)
+ 8000b08:	781b      	ldrb	r3, [r3, #0]
+ 8000b0a:	2b01      	cmp	r3, #1
+ 8000b0c:	d105      	bne.n	8000b1a <EXTI9_CallBack+0x2e>
+	{
+		Task_Flag = TaskB;
+ 8000b0e:	4b09      	ldr	r3, [pc, #36]	; (8000b34 <EXTI9_CallBack+0x48>)
+ 8000b10:	2202      	movs	r2, #2
+ 8000b12:	701a      	strb	r2, [r3, #0]
+		IRQ_Flag = 0;
+ 8000b14:	4b06      	ldr	r3, [pc, #24]	; (8000b30 <EXTI9_CallBack+0x44>)
+ 8000b16:	2200      	movs	r2, #0
+ 8000b18:	701a      	strb	r2, [r3, #0]
+	{
+
+	}
+
+	/* set PendSV */
+	SCB->ICSR |= SCB_ICSR_PENDSVSET_Msk;
+ 8000b1a:	4b07      	ldr	r3, [pc, #28]	; (8000b38 <EXTI9_CallBack+0x4c>)
+ 8000b1c:	685b      	ldr	r3, [r3, #4]
+ 8000b1e:	4a06      	ldr	r2, [pc, #24]	; (8000b38 <EXTI9_CallBack+0x4c>)
+ 8000b20:	f043 5380 	orr.w	r3, r3, #268435456	; 0x10000000
+ 8000b24:	6053      	str	r3, [r2, #4]
+}
+ 8000b26:	bf00      	nop
+ 8000b28:	46bd      	mov	sp, r7
+ 8000b2a:	bc80      	pop	{r7}
+ 8000b2c:	4770      	bx	lr
+ 8000b2e:	bf00      	nop
+ 8000b30:	20000020 	.word	0x20000020
+ 8000b34:	20000021 	.word	0x20000021
+ 8000b38:	e000ed00 	.word	0xe000ed00
+
+08000b3c <main>:
 
 int main(void)
 {
- 8000a88:	b580      	push	{r7, lr}
- 8000a8a:	b086      	sub	sp, #24
- 8000a8c:	af00      	add	r7, sp, #0
+ 8000b3c:	b580      	push	{r7, lr}
+ 8000b3e:	b086      	sub	sp, #24
+ 8000b40:	af00      	add	r7, sp, #0
 	RCC_AFIO_CLK_EN();
- 8000a8e:	4b12      	ldr	r3, [pc, #72]	; (8000ad8 <main+0x50>)
- 8000a90:	699b      	ldr	r3, [r3, #24]
- 8000a92:	4a11      	ldr	r2, [pc, #68]	; (8000ad8 <main+0x50>)
- 8000a94:	f043 0301 	orr.w	r3, r3, #1
- 8000a98:	6193      	str	r3, [r2, #24]
+ 8000b42:	4b21      	ldr	r3, [pc, #132]	; (8000bc8 <main+0x8c>)
+ 8000b44:	699b      	ldr	r3, [r3, #24]
+ 8000b46:	4a20      	ldr	r2, [pc, #128]	; (8000bc8 <main+0x8c>)
+ 8000b48:	f043 0301 	orr.w	r3, r3, #1
+ 8000b4c:	6193      	str	r3, [r2, #24]
 	RCC_GPIOB_CLK_EN();
- 8000a9a:	4b0f      	ldr	r3, [pc, #60]	; (8000ad8 <main+0x50>)
- 8000a9c:	699b      	ldr	r3, [r3, #24]
- 8000a9e:	4a0e      	ldr	r2, [pc, #56]	; (8000ad8 <main+0x50>)
- 8000aa0:	f043 0308 	orr.w	r3, r3, #8
- 8000aa4:	6193      	str	r3, [r2, #24]
+ 8000b4e:	4b1e      	ldr	r3, [pc, #120]	; (8000bc8 <main+0x8c>)
+ 8000b50:	699b      	ldr	r3, [r3, #24]
+ 8000b52:	4a1d      	ldr	r2, [pc, #116]	; (8000bc8 <main+0x8c>)
+ 8000b54:	f043 0308 	orr.w	r3, r3, #8
+ 8000b58:	6193      	str	r3, [r2, #24]
 
-	/*SWITCH_CPU_ACCESS_LEVEL(unprivileged);*/
+	GPIO_PIN_Configuration_t pin_cfg;
+	pin_cfg.GPIO_PinNumber = GPIO_PIN_0;
+ 8000b5a:	2301      	movs	r3, #1
+ 8000b5c:	82bb      	strh	r3, [r7, #20]
+	pin_cfg.GPIO_PinMODE = GPIO_MODE_OUTPUT_PP;
+ 8000b5e:	2304      	movs	r3, #4
+ 8000b60:	75bb      	strb	r3, [r7, #22]
+	pin_cfg.GPIO_PinSPEED = GPIO_SPEED_10MHz;
+ 8000b62:	2301      	movs	r3, #1
+ 8000b64:	75fb      	strb	r3, [r7, #23]
+	MCAL_GPIO_Init(GPIOB, &pin_cfg);
+ 8000b66:	f107 0314 	add.w	r3, r7, #20
+ 8000b6a:	4619      	mov	r1, r3
+ 8000b6c:	4817      	ldr	r0, [pc, #92]	; (8000bcc <main+0x90>)
+ 8000b6e:	f7ff fe2a 	bl	80007c6 <MCAL_GPIO_Init>
+
+	pin_cfg.GPIO_PinNumber = GPIO_PIN_1;
+ 8000b72:	2302      	movs	r3, #2
+ 8000b74:	82bb      	strh	r3, [r7, #20]
+	pin_cfg.GPIO_PinMODE = GPIO_MODE_OUTPUT_PP;
+ 8000b76:	2304      	movs	r3, #4
+ 8000b78:	75bb      	strb	r3, [r7, #22]
+	pin_cfg.GPIO_PinSPEED = GPIO_SPEED_10MHz;
+ 8000b7a:	2301      	movs	r3, #1
+ 8000b7c:	75fb      	strb	r3, [r7, #23]
+	MCAL_GPIO_Init(GPIOB, &pin_cfg);
+ 8000b7e:	f107 0314 	add.w	r3, r7, #20
+ 8000b82:	4619      	mov	r1, r3
+ 8000b84:	4811      	ldr	r0, [pc, #68]	; (8000bcc <main+0x90>)
+ 8000b86:	f7ff fe1e 	bl	80007c6 <MCAL_GPIO_Init>
 
 	EXTI_Configuration_t EXTI_config;
 	EXTI_config.EXTI_PIN = EXTI9PB9;
- 8000aa6:	4a0d      	ldr	r2, [pc, #52]	; (8000adc <main+0x54>)
- 8000aa8:	1d3b      	adds	r3, r7, #4
- 8000aaa:	ca07      	ldmia	r2, {r0, r1, r2}
- 8000aac:	e883 0007 	stmia.w	r3, {r0, r1, r2}
+ 8000b8a:	4a11      	ldr	r2, [pc, #68]	; (8000bd0 <main+0x94>)
+ 8000b8c:	463b      	mov	r3, r7
+ 8000b8e:	ca07      	ldmia	r2, {r0, r1, r2}
+ 8000b90:	e883 0007 	stmia.w	r3, {r0, r1, r2}
 	EXTI_config.EXTI_Trigger_Case = EXTI_Trigger_RISING;
- 8000ab0:	2300      	movs	r3, #0
- 8000ab2:	743b      	strb	r3, [r7, #16]
+ 8000b94:	2300      	movs	r3, #0
+ 8000b96:	733b      	strb	r3, [r7, #12]
 	EXTI_config.PF_IRQ_CallBack = EXTI9_CallBack;
- 8000ab4:	4b0a      	ldr	r3, [pc, #40]	; (8000ae0 <main+0x58>)
- 8000ab6:	617b      	str	r3, [r7, #20]
+ 8000b98:	4b0e      	ldr	r3, [pc, #56]	; (8000bd4 <main+0x98>)
+ 8000b9a:	613b      	str	r3, [r7, #16]
 	EXTI_config.EXTI_IRQ_EN = EXTI_IRQ_ENABLE;
- 8000ab8:	2301      	movs	r3, #1
- 8000aba:	747b      	strb	r3, [r7, #17]
+ 8000b9c:	2301      	movs	r3, #1
+ 8000b9e:	737b      	strb	r3, [r7, #13]
 	MCAL_EXTI_GPIO_Init(&EXTI_config);
- 8000abc:	1d3b      	adds	r3, r7, #4
- 8000abe:	4618      	mov	r0, r3
- 8000ac0:	f7ff fd12 	bl	80004e8 <MCAL_EXTI_GPIO_Init>
+ 8000ba0:	463b      	mov	r3, r7
+ 8000ba2:	4618      	mov	r0, r3
+ 8000ba4:	f7ff fca0 	bl	80004e8 <MCAL_EXTI_GPIO_Init>
 
+	IRQ_Flag = 1;
+ 8000ba8:	4b0b      	ldr	r3, [pc, #44]	; (8000bd8 <main+0x9c>)
+ 8000baa:	2201      	movs	r2, #1
+ 8000bac:	701a      	strb	r2, [r3, #0]
+	Task_Flag = TaskA;
+ 8000bae:	4b0b      	ldr	r3, [pc, #44]	; (8000bdc <main+0xa0>)
+ 8000bb0:	2201      	movs	r2, #1
+ 8000bb2:	701a      	strb	r2, [r3, #0]
 
 	Main_OS();
- 8000ac4:	f7ff ff38 	bl	8000938 <Main_OS>
+ 8000bb4:	f7ff ff5c 	bl	8000a70 <Main_OS>
 
 	/* Loop forever */
 	while(1)
 	{
 		if(IRQ_Flag)
- 8000ac8:	4b06      	ldr	r3, [pc, #24]	; (8000ae4 <main+0x5c>)
- 8000aca:	781b      	ldrb	r3, [r3, #0]
- 8000acc:	2b00      	cmp	r3, #0
- 8000ace:	d0fb      	beq.n	8000ac8 <main+0x40>
+ 8000bb8:	4b07      	ldr	r3, [pc, #28]	; (8000bd8 <main+0x9c>)
+ 8000bba:	781b      	ldrb	r3, [r3, #0]
+ 8000bbc:	2b00      	cmp	r3, #0
+ 8000bbe:	d0fb      	beq.n	8000bb8 <main+0x7c>
 		{
 			IRQ_Flag = 0;
- 8000ad0:	4b04      	ldr	r3, [pc, #16]	; (8000ae4 <main+0x5c>)
- 8000ad2:	2200      	movs	r2, #0
- 8000ad4:	701a      	strb	r2, [r3, #0]
+ 8000bc0:	4b05      	ldr	r3, [pc, #20]	; (8000bd8 <main+0x9c>)
+ 8000bc2:	2200      	movs	r2, #0
+ 8000bc4:	701a      	strb	r2, [r3, #0]
 		if(IRQ_Flag)
- 8000ad6:	e7f7      	b.n	8000ac8 <main+0x40>
- 8000ad8:	40021000 	.word	0x40021000
- 8000adc:	08000b9c 	.word	0x08000b9c
- 8000ae0:	08000a45 	.word	0x08000a45
- 8000ae4:	20000020 	.word	0x20000020
+ 8000bc6:	e7f7      	b.n	8000bb8 <main+0x7c>
+ 8000bc8:	40021000 	.word	0x40021000
+ 8000bcc:	40010c00 	.word	0x40010c00
+ 8000bd0:	08000c94 	.word	0x08000c94
+ 8000bd4:	08000aed 	.word	0x08000aed
+ 8000bd8:	20000020 	.word	0x20000020
+ 8000bdc:	20000021 	.word	0x20000021
 
-08000ae8 <Reset_Handler>:
+08000be0 <Reset_Handler>:
 
   .section .text.Reset_Handler
   .weak Reset_Handler
   .type Reset_Handler, %function
 Reset_Handler:
   ldr   r0, =_estack
- 8000ae8:	480d      	ldr	r0, [pc, #52]	; (8000b20 <LoopForever+0x2>)
+ 8000be0:	480d      	ldr	r0, [pc, #52]	; (8000c18 <LoopForever+0x2>)
   mov   sp, r0          /* set stack pointer */
- 8000aea:	4685      	mov	sp, r0
+ 8000be2:	4685      	mov	sp, r0
 /* Call the clock system intitialization function.*/
   bl  SystemInit
- 8000aec:	f3af 8000 	nop.w
+ 8000be4:	f3af 8000 	nop.w
 
 /* Copy the data segment initializers from flash to SRAM */
   ldr r0, =_sdata
- 8000af0:	480c      	ldr	r0, [pc, #48]	; (8000b24 <LoopForever+0x6>)
+ 8000be8:	480c      	ldr	r0, [pc, #48]	; (8000c1c <LoopForever+0x6>)
   ldr r1, =_edata
- 8000af2:	490d      	ldr	r1, [pc, #52]	; (8000b28 <LoopForever+0xa>)
+ 8000bea:	490d      	ldr	r1, [pc, #52]	; (8000c20 <LoopForever+0xa>)
   ldr r2, =_sidata
- 8000af4:	4a0d      	ldr	r2, [pc, #52]	; (8000b2c <LoopForever+0xe>)
+ 8000bec:	4a0d      	ldr	r2, [pc, #52]	; (8000c24 <LoopForever+0xe>)
   movs r3, #0
- 8000af6:	2300      	movs	r3, #0
+ 8000bee:	2300      	movs	r3, #0
   b LoopCopyDataInit
- 8000af8:	e002      	b.n	8000b00 <LoopCopyDataInit>
+ 8000bf0:	e002      	b.n	8000bf8 <LoopCopyDataInit>
 
-08000afa <CopyDataInit>:
+08000bf2 <CopyDataInit>:
 
 CopyDataInit:
   ldr r4, [r2, r3]
- 8000afa:	58d4      	ldr	r4, [r2, r3]
+ 8000bf2:	58d4      	ldr	r4, [r2, r3]
   str r4, [r0, r3]
- 8000afc:	50c4      	str	r4, [r0, r3]
+ 8000bf4:	50c4      	str	r4, [r0, r3]
   adds r3, r3, #4
- 8000afe:	3304      	adds	r3, #4
+ 8000bf6:	3304      	adds	r3, #4
 
-08000b00 <LoopCopyDataInit>:
+08000bf8 <LoopCopyDataInit>:
 
 LoopCopyDataInit:
   adds r4, r0, r3
- 8000b00:	18c4      	adds	r4, r0, r3
+ 8000bf8:	18c4      	adds	r4, r0, r3
   cmp r4, r1
- 8000b02:	428c      	cmp	r4, r1
+ 8000bfa:	428c      	cmp	r4, r1
   bcc CopyDataInit
- 8000b04:	d3f9      	bcc.n	8000afa <CopyDataInit>
+ 8000bfc:	d3f9      	bcc.n	8000bf2 <CopyDataInit>
 
 /* Zero fill the bss segment. */
   ldr r2, =_sbss
- 8000b06:	4a0a      	ldr	r2, [pc, #40]	; (8000b30 <LoopForever+0x12>)
+ 8000bfe:	4a0a      	ldr	r2, [pc, #40]	; (8000c28 <LoopForever+0x12>)
   ldr r4, =_ebss
- 8000b08:	4c0a      	ldr	r4, [pc, #40]	; (8000b34 <LoopForever+0x16>)
+ 8000c00:	4c0a      	ldr	r4, [pc, #40]	; (8000c2c <LoopForever+0x16>)
   movs r3, #0
- 8000b0a:	2300      	movs	r3, #0
+ 8000c02:	2300      	movs	r3, #0
   b LoopFillZerobss
- 8000b0c:	e001      	b.n	8000b12 <LoopFillZerobss>
+ 8000c04:	e001      	b.n	8000c0a <LoopFillZerobss>
 
-08000b0e <FillZerobss>:
+08000c06 <FillZerobss>:
 
 FillZerobss:
   str  r3, [r2]
- 8000b0e:	6013      	str	r3, [r2, #0]
+ 8000c06:	6013      	str	r3, [r2, #0]
   adds r2, r2, #4
- 8000b10:	3204      	adds	r2, #4
+ 8000c08:	3204      	adds	r2, #4
 
-08000b12 <LoopFillZerobss>:
+08000c0a <LoopFillZerobss>:
 
 LoopFillZerobss:
   cmp r2, r4
- 8000b12:	42a2      	cmp	r2, r4
+ 8000c0a:	42a2      	cmp	r2, r4
   bcc FillZerobss
- 8000b14:	d3fb      	bcc.n	8000b0e <FillZerobss>
+ 8000c0c:	d3fb      	bcc.n	8000c06 <FillZerobss>
 
 /* Call static constructors */
   bl __libc_init_array
- 8000b16:	f000 f811 	bl	8000b3c <__libc_init_array>
+ 8000c0e:	f000 f811 	bl	8000c34 <__libc_init_array>
 /* Call the application's entry point.*/
   bl main
- 8000b1a:	f7ff ffb5 	bl	8000a88 <main>
+ 8000c12:	f7ff ff93 	bl	8000b3c <main>
 
-08000b1e <LoopForever>:
+08000c16 <LoopForever>:
 
 LoopForever:
     b LoopForever
- 8000b1e:	e7fe      	b.n	8000b1e <LoopForever>
+ 8000c16:	e7fe      	b.n	8000c16 <LoopForever>
   ldr   r0, =_estack
- 8000b20:	20002800 	.word	0x20002800
+ 8000c18:	20002800 	.word	0x20002800
   ldr r0, =_sdata
- 8000b24:	20000000 	.word	0x20000000
+ 8000c1c:	20000000 	.word	0x20000000
   ldr r1, =_edata
- 8000b28:	20000004 	.word	0x20000004
+ 8000c20:	20000004 	.word	0x20000004
   ldr r2, =_sidata
- 8000b2c:	08000bb0 	.word	0x08000bb0
+ 8000c24:	08000ca8 	.word	0x08000ca8
   ldr r2, =_sbss
- 8000b30:	20000004 	.word	0x20000004
+ 8000c28:	20000004 	.word	0x20000004
   ldr r4, =_ebss
- 8000b34:	20000074 	.word	0x20000074
+ 8000c2c:	20000074 	.word	0x20000074
 
-08000b38 <ADC1_2_IRQHandler>:
+08000c30 <ADC1_2_IRQHandler>:
  * @retval : None
 */
   .section .text.Default_Handler,"ax",%progbits
 Default_Handler:
 Infinite_Loop:
   b Infinite_Loop
- 8000b38:	e7fe      	b.n	8000b38 <ADC1_2_IRQHandler>
+ 8000c30:	e7fe      	b.n	8000c30 <ADC1_2_IRQHandler>
 	...
 
-08000b3c <__libc_init_array>:
- 8000b3c:	b570      	push	{r4, r5, r6, lr}
- 8000b3e:	2500      	movs	r5, #0
- 8000b40:	4e0c      	ldr	r6, [pc, #48]	; (8000b74 <__libc_init_array+0x38>)
- 8000b42:	4c0d      	ldr	r4, [pc, #52]	; (8000b78 <__libc_init_array+0x3c>)
- 8000b44:	1ba4      	subs	r4, r4, r6
- 8000b46:	10a4      	asrs	r4, r4, #2
- 8000b48:	42a5      	cmp	r5, r4
- 8000b4a:	d109      	bne.n	8000b60 <__libc_init_array+0x24>
- 8000b4c:	f000 f81a 	bl	8000b84 <_init>
- 8000b50:	2500      	movs	r5, #0
- 8000b52:	4e0a      	ldr	r6, [pc, #40]	; (8000b7c <__libc_init_array+0x40>)
- 8000b54:	4c0a      	ldr	r4, [pc, #40]	; (8000b80 <__libc_init_array+0x44>)
- 8000b56:	1ba4      	subs	r4, r4, r6
- 8000b58:	10a4      	asrs	r4, r4, #2
- 8000b5a:	42a5      	cmp	r5, r4
- 8000b5c:	d105      	bne.n	8000b6a <__libc_init_array+0x2e>
- 8000b5e:	bd70      	pop	{r4, r5, r6, pc}
- 8000b60:	f856 3025 	ldr.w	r3, [r6, r5, lsl #2]
- 8000b64:	4798      	blx	r3
- 8000b66:	3501      	adds	r5, #1
- 8000b68:	e7ee      	b.n	8000b48 <__libc_init_array+0xc>
- 8000b6a:	f856 3025 	ldr.w	r3, [r6, r5, lsl #2]
- 8000b6e:	4798      	blx	r3
- 8000b70:	3501      	adds	r5, #1
- 8000b72:	e7f2      	b.n	8000b5a <__libc_init_array+0x1e>
- 8000b74:	08000ba8 	.word	0x08000ba8
- 8000b78:	08000ba8 	.word	0x08000ba8
- 8000b7c:	08000ba8 	.word	0x08000ba8
- 8000b80:	08000bac 	.word	0x08000bac
+08000c34 <__libc_init_array>:
+ 8000c34:	b570      	push	{r4, r5, r6, lr}
+ 8000c36:	2500      	movs	r5, #0
+ 8000c38:	4e0c      	ldr	r6, [pc, #48]	; (8000c6c <__libc_init_array+0x38>)
+ 8000c3a:	4c0d      	ldr	r4, [pc, #52]	; (8000c70 <__libc_init_array+0x3c>)
+ 8000c3c:	1ba4      	subs	r4, r4, r6
+ 8000c3e:	10a4      	asrs	r4, r4, #2
+ 8000c40:	42a5      	cmp	r5, r4
+ 8000c42:	d109      	bne.n	8000c58 <__libc_init_array+0x24>
+ 8000c44:	f000 f81a 	bl	8000c7c <_init>
+ 8000c48:	2500      	movs	r5, #0
+ 8000c4a:	4e0a      	ldr	r6, [pc, #40]	; (8000c74 <__libc_init_array+0x40>)
+ 8000c4c:	4c0a      	ldr	r4, [pc, #40]	; (8000c78 <__libc_init_array+0x44>)
+ 8000c4e:	1ba4      	subs	r4, r4, r6
+ 8000c50:	10a4      	asrs	r4, r4, #2
+ 8000c52:	42a5      	cmp	r5, r4
+ 8000c54:	d105      	bne.n	8000c62 <__libc_init_array+0x2e>
+ 8000c56:	bd70      	pop	{r4, r5, r6, pc}
+ 8000c58:	f856 3025 	ldr.w	r3, [r6, r5, lsl #2]
+ 8000c5c:	4798      	blx	r3
+ 8000c5e:	3501      	adds	r5, #1
+ 8000c60:	e7ee      	b.n	8000c40 <__libc_init_array+0xc>
+ 8000c62:	f856 3025 	ldr.w	r3, [r6, r5, lsl #2]
+ 8000c66:	4798      	blx	r3
+ 8000c68:	3501      	adds	r5, #1
+ 8000c6a:	e7f2      	b.n	8000c52 <__libc_init_array+0x1e>
+ 8000c6c:	08000ca0 	.word	0x08000ca0
+ 8000c70:	08000ca0 	.word	0x08000ca0
+ 8000c74:	08000ca0 	.word	0x08000ca0
+ 8000c78:	08000ca4 	.word	0x08000ca4
 
-08000b84 <_init>:
- 8000b84:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
- 8000b86:	bf00      	nop
- 8000b88:	bcf8      	pop	{r3, r4, r5, r6, r7}
- 8000b8a:	bc08      	pop	{r3}
- 8000b8c:	469e      	mov	lr, r3
- 8000b8e:	4770      	bx	lr
+08000c7c <_init>:
+ 8000c7c:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+ 8000c7e:	bf00      	nop
+ 8000c80:	bcf8      	pop	{r3, r4, r5, r6, r7}
+ 8000c82:	bc08      	pop	{r3}
+ 8000c84:	469e      	mov	lr, r3
+ 8000c86:	4770      	bx	lr
 
-08000b90 <_fini>:
- 8000b90:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
- 8000b92:	bf00      	nop
- 8000b94:	bcf8      	pop	{r3, r4, r5, r6, r7}
- 8000b96:	bc08      	pop	{r3}
- 8000b98:	469e      	mov	lr, r3
- 8000b9a:	4770      	bx	lr
+08000c88 <_fini>:
+ 8000c88:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+ 8000c8a:	bf00      	nop
+ 8000c8c:	bcf8      	pop	{r3, r4, r5, r6, r7}
+ 8000c8e:	bc08      	pop	{r3}
+ 8000c90:	469e      	mov	lr, r3
+ 8000c92:	4770      	bx	lr

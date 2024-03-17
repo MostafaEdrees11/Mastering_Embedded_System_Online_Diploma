@@ -125,7 +125,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGDARM</Key>
-          <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(110=-1,-1,-1,-1,0)(111=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(180=-1,-1,-1,-1,0)(120=-1,-1,-1,-1,0)(121=1086,112,1507,539,1)(122=-1,-1,-1,-1,0)(123=-1,-1,-1,-1,0)(140=-1,-1,-1,-1,0)(240=1093,18,1492,363,0)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=-1,-1,-1,-1,0)(130=-1,-1,-1,-1,0)(131=-1,-1,-1,-1,0)(132=-1,-1,-1,-1,0)(160=-1,-1,-1,-1,0)(161=-1,-1,-1,-1,0)(210=-1,-1,-1,-1,0)(220=-1,-1,-1,-1,0)(230=-1,-1,-1,-1,0)(234=-1,-1,-1,-1,0)(231=-1,-1,-1,-1,0)(232=-1,-1,-1,-1,0)(233=-1,-1,-1,-1,0)(150=-1,-1,-1,-1,0)(151=-1,-1,-1,-1,0)</Name>
+          <Name>(1010=1160,307,1536,864,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(110=-1,-1,-1,-1,0)(111=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(180=-1,-1,-1,-1,0)(120=-1,-1,-1,-1,0)(121=1066,336,1487,763,1)(122=-1,-1,-1,-1,0)(123=-1,-1,-1,-1,0)(140=-1,-1,-1,-1,0)(240=1093,18,1492,363,0)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=-1,-1,-1,-1,0)(130=-1,-1,-1,-1,0)(131=-1,-1,-1,-1,0)(132=-1,-1,-1,-1,0)(160=-1,-1,-1,-1,0)(161=-1,-1,-1,-1,0)(210=-1,-1,-1,-1,0)(220=-1,-1,-1,-1,0)(230=-1,-1,-1,-1,0)(234=-1,-1,-1,-1,0)(231=-1,-1,-1,-1,0)(232=-1,-1,-1,-1,0)(233=-1,-1,-1,-1,0)(150=-1,-1,-1,-1,0)(151=-1,-1,-1,-1,0)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -142,9 +142,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>84</LineNumber>
+          <LineNumber>244</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220000</Address>
+          <Address>134220724</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -153,14 +153,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\84</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\244</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>89</LineNumber>
+          <LineNumber>215</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220034</Address>
+          <Address>134220570</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -169,14 +169,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\89</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\215</Expression>
         </Bp>
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
-          <LineNumber>94</LineNumber>
+          <LineNumber>206</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220062</Address>
+          <Address>134220558</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -185,14 +185,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\94</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\206</Expression>
         </Bp>
         <Bp>
           <Number>3</Number>
           <Type>0</Type>
-          <LineNumber>117</LineNumber>
+          <LineNumber>201</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220154</Address>
+          <Address>134220536</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -201,14 +201,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\117</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\201</Expression>
         </Bp>
         <Bp>
           <Number>4</Number>
           <Type>0</Type>
-          <LineNumber>120</LineNumber>
+          <LineNumber>199</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220164</Address>
+          <Address>134220528</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -217,14 +217,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\120</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\199</Expression>
         </Bp>
         <Bp>
           <Number>5</Number>
           <Type>0</Type>
-          <LineNumber>123</LineNumber>
+          <LineNumber>184</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220180</Address>
+          <Address>134220488</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -233,14 +233,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\123</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\184</Expression>
         </Bp>
         <Bp>
           <Number>6</Number>
           <Type>0</Type>
-          <LineNumber>126</LineNumber>
+          <LineNumber>180</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220196</Address>
+          <Address>134220474</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -249,14 +249,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\126</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\180</Expression>
         </Bp>
         <Bp>
           <Number>7</Number>
           <Type>0</Type>
-          <LineNumber>129</LineNumber>
+          <LineNumber>174</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220214</Address>
+          <Address>134220456</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -265,110 +265,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\129</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\174</Expression>
         </Bp>
         <Bp>
           <Number>8</Number>
           <Type>0</Type>
-          <LineNumber>132</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220216</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\132</Expression>
-        </Bp>
-        <Bp>
-          <Number>9</Number>
-          <Type>0</Type>
-          <LineNumber>137</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220242</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\137</Expression>
-        </Bp>
-        <Bp>
-          <Number>10</Number>
-          <Type>0</Type>
-          <LineNumber>140</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220252</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\140</Expression>
-        </Bp>
-        <Bp>
-          <Number>11</Number>
-          <Type>0</Type>
-          <LineNumber>143</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220268</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\143</Expression>
-        </Bp>
-        <Bp>
-          <Number>12</Number>
-          <Type>0</Type>
-          <LineNumber>146</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220284</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\146</Expression>
-        </Bp>
-        <Bp>
-          <Number>13</Number>
-          <Type>0</Type>
-          <LineNumber>149</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220304</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\149</Expression>
-        </Bp>
-        <Bp>
-          <Number>14</Number>
-          <Type>0</Type>
           <LineNumber>152</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220306</Address>
+          <Address>134220352</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -380,11 +284,11 @@
           <Expression>\\ARM_Modes\../Src/main.c\152</Expression>
         </Bp>
         <Bp>
-          <Number>15</Number>
+          <Number>9</Number>
           <Type>0</Type>
-          <LineNumber>192</LineNumber>
+          <LineNumber>147</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220368</Address>
+          <Address>134220316</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -393,14 +297,110 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\192</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\147</Expression>
+        </Bp>
+        <Bp>
+          <Number>10</Number>
+          <Type>0</Type>
+          <LineNumber>141</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220300</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\141</Expression>
+        </Bp>
+        <Bp>
+          <Number>11</Number>
+          <Type>0</Type>
+          <LineNumber>134</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220282</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\134</Expression>
+        </Bp>
+        <Bp>
+          <Number>12</Number>
+          <Type>0</Type>
+          <LineNumber>128</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220268</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\128</Expression>
+        </Bp>
+        <Bp>
+          <Number>13</Number>
+          <Type>0</Type>
+          <LineNumber>124</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220264</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\124</Expression>
+        </Bp>
+        <Bp>
+          <Number>14</Number>
+          <Type>0</Type>
+          <LineNumber>120</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220244</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\120</Expression>
+        </Bp>
+        <Bp>
+          <Number>15</Number>
+          <Type>0</Type>
+          <LineNumber>112</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220180</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\112</Expression>
         </Bp>
         <Bp>
           <Number>16</Number>
           <Type>0</Type>
-          <LineNumber>197</LineNumber>
+          <LineNumber>113</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220390</Address>
+          <Address>134220190</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -409,126 +409,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\197</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\113</Expression>
         </Bp>
         <Bp>
           <Number>17</Number>
           <Type>0</Type>
-          <LineNumber>221</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220484</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\221</Expression>
-        </Bp>
-        <Bp>
-          <Number>18</Number>
-          <Type>0</Type>
-          <LineNumber>0</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220156</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>0x0800097C</Expression>
-        </Bp>
-        <Bp>
-          <Number>19</Number>
-          <Type>0</Type>
-          <LineNumber>0</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220158</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>0x0800097E</Expression>
-        </Bp>
-        <Bp>
-          <Number>20</Number>
-          <Type>0</Type>
-          <LineNumber>0</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220160</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename></Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>0x08000980</Expression>
-        </Bp>
-        <Bp>
-          <Number>21</Number>
-          <Type>0</Type>
-          <LineNumber>100</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220092</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\100</Expression>
-        </Bp>
-        <Bp>
-          <Number>22</Number>
-          <Type>0</Type>
-          <LineNumber>103</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220104</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\103</Expression>
-        </Bp>
-        <Bp>
-          <Number>23</Number>
-          <Type>0</Type>
-          <LineNumber>104</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220114</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\104</Expression>
-        </Bp>
-        <Bp>
-          <Number>24</Number>
-          <Type>0</Type>
           <LineNumber>107</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220124</Address>
+          <Address>134220146</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -540,11 +428,11 @@
           <Expression>\\ARM_Modes\../Src/main.c\107</Expression>
         </Bp>
         <Bp>
-          <Number>25</Number>
+          <Number>18</Number>
           <Type>0</Type>
-          <LineNumber>108</LineNumber>
+          <LineNumber>106</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220134</Address>
+          <Address>134220136</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -553,14 +441,14 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\108</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\106</Expression>
         </Bp>
         <Bp>
-          <Number>26</Number>
+          <Number>19</Number>
           <Type>0</Type>
-          <LineNumber>112</LineNumber>
+          <LineNumber>101</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220322</Address>
+          <Address>134220112</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -569,21 +457,122 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\ARM_Modes\../Src/main.c\112</Expression>
+          <Expression>\\ARM_Modes\../Src/main.c\101</Expression>
+        </Bp>
+        <Bp>
+          <Number>20</Number>
+          <Type>0</Type>
+          <LineNumber>99</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220104</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\99</Expression>
+        </Bp>
+        <Bp>
+          <Number>21</Number>
+          <Type>0</Type>
+          <LineNumber>94</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220076</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\94</Expression>
+        </Bp>
+        <Bp>
+          <Number>22</Number>
+          <Type>0</Type>
+          <LineNumber>95</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220086</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\95</Expression>
+        </Bp>
+        <Bp>
+          <Number>23</Number>
+          <Type>0</Type>
+          <LineNumber>88</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220054</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\88</Expression>
+        </Bp>
+        <Bp>
+          <Number>24</Number>
+          <Type>0</Type>
+          <LineNumber>87</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134220044</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit14_Mastering ARM Cortex M3_4\Lesson2_ARM Modes\Src\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\ARM_Modes\../Src/main.c\87</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>_S_PSP_TaskA</ItemText>
+          <ItemText>TaskA_Flag</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>_S_PSP_TaskB</ItemText>
+          <ItemText>TaskB_Flag</ItemText>
+        </Ww>
+        <Ww>
+          <count>2</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>SVC_ID</ItemText>
         </Ww>
       </WatchWindow1>
+      <MemoryWindow1>
+        <Mm>
+          <WinNumber>1</WinNumber>
+          <SubType>0</SubType>
+          <ItemText>sp</ItemText>
+          <AccSizeX>0</AccSizeX>
+        </Mm>
+      </MemoryWindow1>
+      <MemoryWindow2>
+        <Mm>
+          <WinNumber>2</WinNumber>
+          <SubType>0</SubType>
+          <ItemText>sp</ItemText>
+          <AccSizeX>0</AccSizeX>
+        </Mm>
+      </MemoryWindow2>
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>

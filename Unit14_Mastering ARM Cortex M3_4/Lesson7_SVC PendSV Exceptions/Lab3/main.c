@@ -59,8 +59,7 @@ unsigned int _E_PSP_TaskB;
 
 
 uint8_t IRQ_Flag = 0;
-uint8_t TaskA_Flag = 0;
-uint8_t TaskB_Flag = 0;
+uint8_t Task_Flag = 0;
 
 #define TaskA		1
 #define TaskB		2
@@ -82,84 +81,16 @@ uint8_t TaskB_Flag = 0;
 
 #define OS_Generate_Exception_Inerrupt					__asm("SVC #0x3")
 
-
-//int TaskA_Fun(int a, int b, int c)
-//{
-//	return a+b+c;
-//}
-//
-//int TaskB_Fun(int a, int b, int c, int d)
-//{
-//	return a+b+c+d;
-//}
-
-//void OS_SVC_Services(unsigned int *Stack_Pointer)
-//{
-//	unsigned char SVC_ID;
-//	unsigned int number1, number2;
-//	SVC_ID = *((unsigned char *)(((unsigned char *)Stack_Pointer[6])-2));
-//
-//	number1 = Stack_Pointer[0];
-//	number2 = Stack_Pointer[1];
-//
-//	switch(SVC_ID)
-//	{
-//	case 1:	//Addition
-//		Stack_Pointer[0] = number1 + number2;
-//		break;
-//
-//	case 2:	//Subtraction
-//		Stack_Pointer[0] = number1 - number2;
-//		break;
-//
-//	case 3:	//Multiplication
-//		Stack_Pointer[0] = number1 * number2;
-//		break;
-//	}
-//}
-
-//int OS_SVC_Set(int num1, int num2, int SVC_ID)
-//{
-//	int result;
-//
-//	switch(SVC_ID)
-//	{
-//	case 1:	//Addition
-//		__asm("SVC #1");
-//		break;
-//
-//	case 2:	//Subtraction
-//		__asm("SVC #2");
-//		break;
-//
-//	case 3:	//Multiplication
-//		__asm("SVC #3");
-//		break;
-//	}
-//
-//	__asm("MOV %[OUT], R0" : [OUT] "=r" (result));
-//
-//	return result;
-//}
-
-//__attribute((naked)) void SVC_Handler(void)
-//{
-//	// Check which stack we use before stacking MSP or PSP
-//	__asm("TST LR, #0x4 \n\t"
-//			"ITE EQ \n\t"
-//			"MRSEQ R0, MSP \n\t"
-//			"MRSNE R0, PSP \n\t"
-//			"B OS_SVC_Services");
-//}
-
 void TaskA_Fun(void)
 {
+	/* Turn on Led on PortB Pin0 & Turn off Led on PortB Pin1 */
 	MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
 	MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 0);
 }
 
 void TaskB_Fun(void)
 {
+	/* Turn on Led on PortB Pin1 & Turn off Led on PortB Pin0 */
 	MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1);
 	MCAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
 }
@@ -175,14 +106,12 @@ void OS_SVC_Services(unsigned int *Stack_Pointer)
 		OS_Set_PSP_Val(_S_PSP_TaskA);
 		OS_Set_SP_shadowto_PSP;
 		OS_Switch_Privileged_to_Unprivileged;
-		TaskA_Fun();
 		break;
 
 	case 2:	//TaskB
 		OS_Set_PSP_Val(_S_PSP_TaskB);
 		OS_Set_SP_shadowto_PSP;
 		OS_Switch_Privileged_to_Unprivileged;
-		TaskB_Fun();
 		break;
 	}
 }
@@ -213,17 +142,15 @@ __attribute((naked)) void SVC_Handler(void)
 
 void PendSV_Handler(void)
 {
-	if(TaskA_Flag == 1)		//switch to TaskA
+	if(Task_Flag == TaskA)		//switch to TaskA
 	{
 		OS_Set_PSP_Val(_S_PSP_TaskA);
 		OS_Set_SP_shadowto_PSP;
-		TaskA_Fun();
 	}
-	else if(TaskB_Flag == 1)	//switch to TaskB
+	else if(Task_Flag == TaskB)	//switch to TaskB
 	{
 		OS_Set_PSP_Val(_S_PSP_TaskB);
 		OS_Set_SP_shadowto_PSP;
-		TaskB_Fun();
 	}
 	else
 	{
@@ -244,59 +171,18 @@ void Main_OS(void)
 	_S_PSP_TaskB = (_E_PSP_TaskA - 8);
 	_E_PSP_TaskB = (_S_PSP_TaskB - TaskB_Stack_Size);
 
-	OS_SVC_Set_First_Task(TaskA);
+	OS_SVC_Set_First_Task(Task_Flag);
 
 	while(1)
 	{
-		// use SVC to call 1st Task --> TaskA or TaskB
-		//		OS_SVC_Set_First_Task(TaskA);
-
-		//		__asm("NOP");
-		//
-		//		if(TaskA_Flag == 1)
-		//		{
-		//			/* Set PSP with _S_PSP_TaskA */
-		//			OS_Set_PSP_Val(_S_PSP_TaskA);
-		//
-		//			/* Set SP --> PSP not MSP */
-		//			OS_Set_SP_shadowto_PSP;
-		//
-		//			/* Switch from privileged --> unprivileged*/
-		//			OS_Switch_Privileged_to_Unprivileged;
-		//
-		//			/* Call TaskA */
-		//			TaskA_Flag = TaskA_Fun(1, 2, 3);
-		//
-		//			/* Switch from unprivileged --> privileged*/
-		//			OS_Generate_Exception_Inerrupt;
-		//
-		//			/* Set SP --> MSP not PSP */
-		//			OS_Set_SP_shadowto_MSP;
-		//		}
-		//		else if(TaskB_Flag == 1)
-		//		{
-		//			/* Set PSP with _S_PSP_TaskB */
-		//			OS_Set_PSP_Val(_S_PSP_TaskB);
-		//
-		//			/* Set SP --> PSP not MSP */
-		//			OS_Set_SP_shadowto_PSP;
-		//
-		//			/* Switch from privileged --> unprivileged*/
-		//			OS_Switch_Privileged_to_Unprivileged;
-		//
-		//			/* Call TaskB */
-		//			TaskB_Flag = TaskB_Fun(1, 2, 3, 4);
-		//
-		//			/* Switch from unprivileged --> privileged*/
-		//			OS_Generate_Exception_Inerrupt;
-		//
-		//			/* Set SP --> MSP not PSP */
-		//			OS_Set_SP_shadowto_MSP;
-		//		}
-		//		else
-		//		{
-		//
-		//		}
+		if(Task_Flag == TaskA)
+		{
+			TaskA_Fun();
+		}
+		else if(Task_Flag == TaskB)
+		{
+			TaskB_Fun();
+		}
 	}
 }
 
@@ -307,40 +193,17 @@ enum CPU_ACCESS_LEVEL
 	unprivileged
 };
 
-void SWITCH_CPU_ACCESS_LEVEL(enum CPU_ACCESS_LEVEL CPU_STATE)
-{
-	switch(CPU_STATE)
-	{
-	case privileged:
-		// Clear Bit0 @ Control Register
-		__asm("MRS R3, CONTROL	\n\t"	//Move control register to general purpose register 'r3'
-				"LSR R3, R3, #1	\n\t"	//Shift R3 to right by one	ex:  0b00010001 --> 0b00001000
-				"LSL R3, R3, #1	\n\t"	//Shift R3 to left by one	--> 0b00010000 --> we clear the bit
-				"MSR CONTROL, R3");		//Move the value of R3 after clear the bit to control register
-		break;
-
-	case unprivileged:
-		// Set Bit0 @ Control Register
-		__asm("MRS R3, CONTROL	\n\t"	//Move control register to general purpose register 'r3'
-				"ORR R3, R3, #0x1 \n\t"	//Logical or between R3 and 0x1 to set the first bit
-				"MSR CONTROL, R3");		//Move the value of R3 after clear the bit to control register
-		break;
-	}
-}
-
 void EXTI9_CallBack(void)
 {
 	/* rise the flag of the task that its own order */
 	if(IRQ_Flag == 0)
 	{
-		TaskA_Flag = 1;
-		TaskB_Flag = 0;
+		Task_Flag = TaskA;
 		IRQ_Flag = 1;
 	}
 	else if(IRQ_Flag == 1)
 	{
-		TaskB_Flag = 1;
-		TaskA_Flag = 0;
+		Task_Flag = TaskB;
 		IRQ_Flag = 0;
 	}
 	else
@@ -357,17 +220,12 @@ int main(void)
 	RCC_AFIO_CLK_EN();
 	RCC_GPIOB_CLK_EN();
 
-
-	/*SWITCH_CPU_ACCESS_LEVEL(unprivileged);*/
-
-	/* Toggle pin0 @ PortB in TaskA */
 	GPIO_PIN_Configuration_t pin_cfg;
 	pin_cfg.GPIO_PinNumber = GPIO_PIN_0;
 	pin_cfg.GPIO_PinMODE = GPIO_MODE_OUTPUT_PP;
 	pin_cfg.GPIO_PinSPEED = GPIO_SPEED_10MHz;
 	MCAL_GPIO_Init(GPIOB, &pin_cfg);
 
-	/* Toggle pin1 @ PortB in TaskB */
 	pin_cfg.GPIO_PinNumber = GPIO_PIN_1;
 	pin_cfg.GPIO_PinMODE = GPIO_MODE_OUTPUT_PP;
 	pin_cfg.GPIO_PinSPEED = GPIO_SPEED_10MHz;
@@ -375,21 +233,15 @@ int main(void)
 
 	EXTI_Configuration_t EXTI_config;
 	EXTI_config.EXTI_PIN = EXTI9PB9;
-	EXTI_config.EXTI_Trigger_Case = EXTI_Trigger_FALLING;
+	EXTI_config.EXTI_Trigger_Case = EXTI_Trigger_RISING;
 	EXTI_config.PF_IRQ_CallBack = EXTI9_CallBack;
 	EXTI_config.EXTI_IRQ_EN = EXTI_IRQ_ENABLE;
 	MCAL_EXTI_GPIO_Init(&EXTI_config);
 
 	IRQ_Flag = 1;
-	TaskA_Flag = 1;
-	TaskB_Flag = 0;
+	Task_Flag = TaskA;
 
 	Main_OS();
-
-	//	int res;
-	//	res = OS_SVC_Set(5, 2, 1);
-	//	res = OS_SVC_Set(5, 2, 2);
-	//	res = OS_SVC_Set(5, 2, 3);
 
 	/* Loop forever */
 	while(1)
