@@ -139,7 +139,7 @@ FIFO_Buf_Status FIFO_Enqueue_Item(FIFO_Buf_t *P_fifo, FIFO_element_type item)
 	*(P_fifo->head) = item;
 	P_fifo->count++;
 	//check if head at the end of queue or not.
-	if(P_fifo->head == (P_fifo->base + (P_fifo->length * sizeof(FIFO_element_type))))
+	if(P_fifo->head == (P_fifo->base + P_fifo->length))
 		P_fifo->head = P_fifo->base;
 	else
 		P_fifo->head++;
@@ -168,7 +168,7 @@ FIFO_Buf_Status FIFO_Dequeue_Item(FIFO_Buf_t *P_fifo, FIFO_element_type *item)
 	*item = *(P_fifo->tail);
 	P_fifo->count--;
 	//check if tail at the end of queue or not.
-	if(P_fifo->tail == (P_fifo->base + (P_fifo->length * sizeof(FIFO_element_type))))
+	if(P_fifo->tail == (P_fifo->base + P_fifo->length))
 		P_fifo->tail = P_fifo->base;
 	else
 		P_fifo->tail++;
