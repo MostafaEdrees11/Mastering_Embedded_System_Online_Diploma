@@ -1,0 +1,4 @@
+rm "D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit13_Mastering_CAN_Protocol\Case_Study1\Keil Project\Objects\CAN_Protocol.axf"
+
+cp "D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit13_Mastering_CAN_Protocol\Case_Study1\Debug\CAN_Protocol.elf" "D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit13_Mastering_CAN_Protocol\Case_Study1\Debug\CAN_Protocol.axf"
+mv "D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit13_Mastering_CAN_Protocol\Case_Study1\Debug\CAN_Protocol.axf" "D:\Mastering Embedded System\GitHub_Repo\Mastering_Embedded_System_Online_Diploma\Unit13_Mastering_CAN_Protocol\Case_Study1\Keil Project\Objects"
