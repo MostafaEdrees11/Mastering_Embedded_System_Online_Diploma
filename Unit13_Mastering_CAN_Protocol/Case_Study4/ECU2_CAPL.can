@@ -1,0 +1,41 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  message Speed_Value_Message Speed_Val;
+  int Speed = 0;
+}
+
+on start
+{
+  write("----> Starting ECU2 <----");
+}
+
+on message ACC_CMD_Message
+{
+  write("ECU2 received ACC State From ECU1");
+  if(this.ACC_State.phys == 1)  //Acceleration on
+  {
+    Speed += 10;
+    if(Speed >= 255)
+    {
+      Speed = 255;
+    }
+  }
+  else  //Acceleration off
+  {
+    Speed -= 10;
+    if(Speed <= 0)
+    {
+      Speed = 0;
+    }
+  }
+  
+  Speed_Val.Speed_Value.phys = Speed;
+  write("ECU2 send speed value to ECU1");
+  output(Speed_Val);
+}

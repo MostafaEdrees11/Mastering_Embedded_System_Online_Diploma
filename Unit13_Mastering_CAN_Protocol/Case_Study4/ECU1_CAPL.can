@@ -1,0 +1,43 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  msTimer Send_Timer;
+  const int Send_Timer_Period = 1000;
+  
+  message ACC_CMD_Message ACC_CMD;
+  int ACC = 0;
+}
+
+on start
+{
+  write("----> Starting ECU1 <----");
+  write("Eng. Mostafa Edrees --> Case Study 4 --> Learn-In-Depth");
+  setTimer(Send_Timer, Send_Timer_Period);
+}
+
+on message Speed_Value_Message
+{
+  write("ECU1 received speed value from ECU2"); 
+}
+
+on timer Send_Timer
+{
+  write("Eng. Mostafa Edrees --> Case Study 4 --> Learn-In-Depth");
+  
+  //ACC ^= 1;
+  //ACC_CMD.ACC_State.phys = ACC;
+  //write("ECU1 send ACC state to ECU2");
+  //output(ACC_CMD);
+  
+  ACC = @sysvar::ACC_System_Variable;
+  ACC_CMD.ACC_State.phys = ACC;
+  write("ECU1 send ACC state to ECU2");
+  output(ACC_CMD);
+  
+  setTimer(Send_Timer, Send_Timer_Period);
+}
