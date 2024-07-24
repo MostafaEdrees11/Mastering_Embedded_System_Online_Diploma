@@ -127,3 +127,7 @@ In this step, we create the GUI of the Meter and the Button of Acceleratation.
 ![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit13_Mastering_CAN_Protocol/Case_Study4/img/Graph.JPG)
 
 ## Final View
+
+
+https://github.com/user-attachments/assets/7a0fbeb8-e1fa-4957-8a36-0e45224140c7
+
