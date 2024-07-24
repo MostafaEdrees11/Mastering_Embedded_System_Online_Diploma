@@ -10,14 +10,14 @@ It recives Speed_Senor_Value from ECU2.
 It recives ACC_CMD from ECU1 then increase the speed if the command is 
 acceleration and decrease the speed if the command is not acceleation.
 It sends Speed_Senor_Frame to ECU1 and this message has ID `0x3AB`.
-![gitHub]()
+![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit13_Mastering_CAN_Protocol/Case_Study4/img/Intro.JPG)
 
 ## Steps
 ### Configure Simulation Setup
 In this step, we add CAN Network and add Nodes for ECU1 & ECU2 and we add DataBase files which in it we define
 messages and signals.
-![gitHub]()
-![gitHub]()
+![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit13_Mastering_CAN_Protocol/Case_Study4/img/DataBase.JPG)
+![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit13_Mastering_CAN_Protocol/Case_Study4/img/Simulation_Setup.JPG)
 
 ### Write CAPL Script for ECU1
 ```
@@ -113,17 +113,17 @@ on message ACC_CMD_Message
 
 ### Create Panel Design
 In this step, we create the GUI of the Meter and the Button of Acceleratation.
-![gitHub]()
+![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit13_Mastering_CAN_Protocol/Case_Study4/img/GUI.JPG)
 
 
 ## Running Simulation on CANoe
 ### Messages between Two MCUs
-![gitHub]()
+![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit13_Mastering_CAN_Protocol/Case_Study4/img/Message_Between_Two_MCUs.JPG)
 ### Tracing when ACC is On
-![gitHub]()
+![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit13_Mastering_CAN_Protocol/Case_Study4/img/Trace_Increasing.JPG)
 ### Tracing when ACC is Off
-![gitHub]()
+![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit13_Mastering_CAN_Protocol/Case_Study4/img/Trace_Decreasing.JPG)
 ### View of Graph when we increase/decrease speed
-![gitHub]()
+![gitHub](https://github.com/MostafaEdrees11/Mastering_Embedded_System_Online_Diploma/blob/master/Unit13_Mastering_CAN_Protocol/Case_Study4/img/Graph.JPG)
 
 ## Final View
